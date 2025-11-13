@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import './App.css'; // Mantenemos la importación de CSS si la necesitas
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [mensaje, setMensaje] = useState('Intentando conectar al Backend...');
+  
+  const API_ENDPOINT = '/api/Test/test'; 
+
+  useEffect(() => {
+    fetch(API_ENDPOINT) 
+      .then(response => {
+          if (response.ok) {
+              return response.text(); 
+          }
+          throw new Error(`Error HTTP: ${response.status}`);
+      })
+      .then(data => {
+        setMensaje(`✅ Backend Respondió: ${data}`);
+      })
+      .catch(error => {
+        console.error('Error de conexión o configuración:', error);
+        setMensaje('❌ ERROR DE CONEXIÓN. Revisa la terminal del backend, el proxy de Vite o las reglas CORS.');
+      });
+  }, []); 
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div className="card">
+      <h1>Prueba de Conexión Full Stack</h1>
+      <p style={{ fontSize: '1.2em', fontWeight: 'bold' }}>
+        {mensaje}
       </p>
-    </>
-  )
+      <p>
+        Si ves el mensaje de éxito, ¡tu Backend y Frontend se comunican!
+      </p>
+    </div>
+  );
 }
 
-export default App
+export default App;
