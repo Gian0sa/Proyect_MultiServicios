@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KillasTravel.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c013b4e0c94940f7f2d8d2997398dac3412431c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7b412164a5449fa077d05118614c2afd15d1547")]
 [assembly: System.Reflection.AssemblyProductAttribute("KillasTravel.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KillasTravel.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

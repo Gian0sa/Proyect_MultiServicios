@@ -98,3 +98,76 @@ Una vez que ambos servidores estén corriendo, el componente `App.jsx` realiza u
 `GET /api/Test/test`
 
 Si la conexión es exitosa, se mostrará el mensaje "Backend Respondió: ¡Conexión exitosa desde el Backend!".
+
+# Si la base de datos ya existe, elimínala manualmente en SSMS primero.
+Remove-Migration -StartupProject Proy_Backend 
+
+# Crear la migracion.
+Add-Migration FinalSchemaSetup -StartupProject Proy_Backend
+
+# Aplicar la estructura de la base de datos
+Update-Database -StartupProject Proy_Backend
+
+# BD prueba 
+
+-- 1. Regiones (Provincia)
+INSERT INTO Regiones (Nombre) VALUES
+('Cusco'),
+('Lima'),
+('Arequipa'),
+('Ica');
+go
+
+-- 2. Destinos (Lugares específicos. Asume RegionID 1=Cusco, 2=Lima, 4=Ica)
+INSERT INTO Destinos (Nombre, Descripcion, RegionID) VALUES
+('Machu Picchu', 'Ciudadela Inca. Maravilla del mundo.', 1),
+('Centro Histórico Lima', 'Patrimonio de la Humanidad.', 2),
+('Huacachina', 'Oasis en el desierto con dunas.', 4);
+go
+
+-- 3. Usuarios (Admin y Cliente)
+INSERT INTO Usuarios (Email, PasswordHash, Nombre, Apellido, Telefono, Rol) VALUES
+('admin@killas.com', 'hashed_admin_pass', 'Giam', 'Perez', '999111222', 'Admin'),
+('cliente@ejemplo.com', 'hashed_client_pass', 'Ana', 'Lopez', '987654321', 'Cliente');
+go
+
+-- 4.1 Alojamientos (Usando DestinoID 3 = Huacachina)
+INSERT INTO Alojamientos (Nombre, Ciudad, Direccion, PrecioPorNoche, Categoria, DestinoID) VALUES
+('Hotel Huacachina Oasis', 'Ica', 'Junto al Oasis', 180.00, 'Boutique', 3),
+('Hostal Central Cusco', 'Cusco', 'Cerca a Plaza', 80.00, 'Hostal', 1);
+
+
+-- 4.2 Transportes (Usando DestinoID 2 = Lima como Origen, DestinoID 3 = Huacachina como Final)
+INSERT INTO Transportes (NombreRuta, OrigenDestinoID, DestinoFinalDestinoID, TipoVehiculo) VALUES
+('Ruta Sur Lima-Ica', 2, 3, 'Bus'),
+('Ruta Turística Cusco', 1, 1, 'Van Privada');
+
+
+-- 4.3 TransporteTarifas (Precio variable para la Ruta Sur Lima-Ica, TransporteID 1)
+INSERT INTO TransporteTarifas (TransporteID, NombreServicio, Precio, DescripcionServicio) VALUES
+(1, 'Económico', 30.00, 'Asiento estándar, sin snacks'),
+(1, 'VIP', 60.00, 'Asiento semi-cama, WiFi, snack'),
+(2, 'Tour Privado', 200.00, 'Van ejecutiva, guía incluido');
+
+
+-- 4.4 Tours (Usando DestinoID 1 = Machu Picchu)
+INSERT INTO Tours (Nombre, Descripcion, Precio, DuracionDias, DestinoID) VALUES
+('Tour Completo Machu Picchu', 'Incluye tren y bus a la ciudadela.', 350.00, 1, 1),
+('Tour Gastronómico Lima', 'Recorrido por Barranco y Miraflores.', 120.00, 1, 2);
+go
+
+# Prueba en PoSTMAN
+
+http://localhost:5029/api/Alojamientos
+
+ CREATE
+
+{
+  "nombre": "Hotel Sol de Ica",
+  "ciudad": "Ica",
+  "direccion": "Av. La Esperanza 123",
+  "precioPorNoche": 225.50,
+  "categoria": "4 estrellas",
+  "destinoID": 1, 
+  "destino": null
+}

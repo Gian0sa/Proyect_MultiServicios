@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\proykillas_travel\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|solutionrelative:proykillas_travel\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\proykillas_travel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|solutionrelative:proykillas_travel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\proykillas_travel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|solutionrelative:proykillas_travel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\proykillas_travel\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|solutionrelative:proykillas_travel\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0E229C-5324-4AB2-8F50-19E6B5151274}|KillasTravel.Application\\KillasTravel.Application.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\killastravel.application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0E229C-5324-4AB2-8F50-19E6B5151274}|KillasTravel.Application\\KillasTravel.Application.csproj|solutionrelative:killastravel.application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0E229C-5324-4AB2-8F50-19E6B5151274}|KillasTravel.Application\\KillasTravel.Application.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\killastravel.application\\dtos\\alojamientoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0E229C-5324-4AB2-8F50-19E6B5151274}|KillasTravel.Application\\KillasTravel.Application.csproj|solutionrelative:killastravel.application\\dtos\\alojamientoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\proykillas_travel\\controllers\\alojamientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|solutionrelative:proykillas_travel\\controllers\\alojamientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,20 +35,8 @@
       "RelativeMoniker": "D:0:0:{89283519-7909-49CF-B50A-DDC63D8AEAC6}|KillasTravel.Infrastructure\\KillasTravel.Infrastructure.csproj|solutionrelative:killastravel.infrastructure\\repositories\\alojamientorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\proykillas_travel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|solutionrelative:proykillas_travel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC0E229C-5324-4AB2-8F50-19E6B5151274}|KillasTravel.Application\\KillasTravel.Application.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\killastravel.application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC0E229C-5324-4AB2-8F50-19E6B5151274}|KillasTravel.Application\\KillasTravel.Application.csproj|solutionrelative:killastravel.application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DC0E229C-5324-4AB2-8F50-19E6B5151274}|KillasTravel.Application\\KillasTravel.Application.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\killastravel.application\\killastravel.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{DC0E229C-5324-4AB2-8F50-19E6B5151274}|KillasTravel.Application\\KillasTravel.Application.csproj|solutionrelative:killastravel.application\\killastravel.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC0E229C-5324-4AB2-8F50-19E6B5151274}|KillasTravel.Application\\KillasTravel.Application.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\killastravel.application\\dtos\\alojamientoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC0E229C-5324-4AB2-8F50-19E6B5151274}|KillasTravel.Application\\KillasTravel.Application.csproj|solutionrelative:killastravel.application\\dtos\\alojamientoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\proykillas_travel\\controllers\\transportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1FA495E1-F449-475F-BC70-8B265888557B}|KillasTravel.Domain\\KillasTravel.Domain.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\killastravel.domain\\entities\\detalleorden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FA495E1-F449-475F-BC70-8B265888557B}|KillasTravel.Domain\\KillasTravel.Domain.csproj|solutionrelative:killastravel.domain\\entities\\detalleorden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Migrations\\20251117030550_FinalSchemaSetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KillasTravel.Infrastructure\\Migrations\\20251117030550_FinalSchemaSetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FA495E1-F449-475F-BC70-8B265888557B}|KillasTravel.Domain\\KillasTravel.Domain.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\killastravel.domain\\entities\\transporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -174,10 +182,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.307\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\proykillas_travel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{262D0EDA-715D-4D61-83E3-3A5628D214D7}|ProyKillas_Travel\\KillasTravel.Api.csproj|solutionrelative:proykillas_travel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89283519-7909-49CF-B50A-DDC63D8AEAC6}|KillasTravel.Infrastructure\\KillasTravel.Infrastructure.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\killastravel.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89283519-7909-49CF-B50A-DDC63D8AEAC6}|KillasTravel.Infrastructure\\KillasTravel.Infrastructure.csproj|solutionrelative:killastravel.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -188,6 +192,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{DC0E229C-5324-4AB2-8F50-19E6B5151274}|KillasTravel.Application\\KillasTravel.Application.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\killastravel.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC0E229C-5324-4AB2-8F50-19E6B5151274}|KillasTravel.Application\\KillasTravel.Application.csproj|solutionrelative:killastravel.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89283519-7909-49CF-B50A-DDC63D8AEAC6}|KillasTravel.Infrastructure\\KillasTravel.Infrastructure.csproj|d:\\descargas\\proyect_full_stack\\backend\\slnkillas_travel\\killastravel.infrastructure\\migrations\\20251117030550_finalschemasetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89283519-7909-49CF-B50A-DDC63D8AEAC6}|KillasTravel.Infrastructure\\KillasTravel.Infrastructure.csproj|solutionrelative:killastravel.infrastructure\\migrations\\20251117030550_finalschemasetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -197,7 +205,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -205,15 +213,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "KillasTravel.Application",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\KillasTravel.Application.csproj",
-              "RelativeDocumentMoniker": "KillasTravel.Application\\KillasTravel.Application.csproj",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\KillasTravel.Application.csproj",
-              "RelativeToolTip": "KillasTravel.Application\\KillasTravel.Application.csproj",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ProyKillas_Travel\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ProyKillas_Travel\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-17T17:41:38.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ProyKillas_Travel\\appsettings.Development.json",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\appsettings.Development.json",
+              "RelativeToolTip": "ProyKillas_Travel\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-17T05:52:54.75Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-17T17:41:29.601Z",
               "EditorCaption": ""
             },
             {
@@ -231,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "TourRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Repositories\\TourRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\Repositories\\TourRepository.cs",
@@ -239,25 +260,24 @@
               "RelativeToolTip": "KillasTravel.Infrastructure\\Repositories\\TourRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T01:03:33.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T01:03:33.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "AlojamientosController.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\Controllers\\AlojamientosController.cs",
               "RelativeDocumentMoniker": "ProyKillas_Travel\\Controllers\\AlojamientosController.cs",
               "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\Controllers\\AlojamientosController.cs",
               "RelativeToolTip": "ProyKillas_Travel\\Controllers\\AlojamientosController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBEAAAB6AAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAA1wBEAAAB6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T01:38:27.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "ToursController.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\Controllers\\ToursController.cs",
               "RelativeDocumentMoniker": "ProyKillas_Travel\\Controllers\\ToursController.cs",
@@ -265,12 +285,11 @@
               "RelativeToolTip": "ProyKillas_Travel\\Controllers\\ToursController.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAA1wDcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T01:53:28.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T01:53:28.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "ITransporteRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\Interfaces\\ITransporteRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Application\\Interfaces\\ITransporteRepository.cs",
@@ -278,12 +297,11 @@
               "RelativeToolTip": "KillasTravel.Application\\Interfaces\\ITransporteRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T00:58:28.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T00:58:28.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "TransporteRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Repositories\\TransporteRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\Repositories\\TransporteRepository.cs",
@@ -291,38 +309,49 @@
               "RelativeToolTip": "KillasTravel.Infrastructure\\Repositories\\TransporteRepository.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAwwEwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T01:03:25.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T01:03:25.281Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\appsettings.json",
+              "RelativeDocumentMoniker": "ProyKillas_Travel\\appsettings.json",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\appsettings.json",
+              "RelativeToolTip": "ProyKillas_Travel\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-16T19:19:14.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\Program.cs",
               "RelativeDocumentMoniker": "ProyKillas_Travel\\Program.cs",
               "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\Program.cs",
               "RelativeToolTip": "ProyKillas_Travel\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABsAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-16T18:54:52.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AlojamientoRepository.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Repositories\\AlojamientoRepository.cs",
-              "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\Repositories\\AlojamientoRepository.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Repositories\\AlojamientoRepository.cs",
-              "RelativeToolTip": "KillasTravel.Infrastructure\\Repositories\\AlojamientoRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwEoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T01:03:13.77Z",
-              "EditorCaption": ""
+              "DocumentIndex": 8,
+              "Title": "KillasTravel.Application.csproj",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\KillasTravel.Application.csproj",
+              "RelativeDocumentMoniker": "KillasTravel.Application\\KillasTravel.Application.csproj",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\KillasTravel.Application.csproj",
+              "RelativeToolTip": "KillasTravel.Application\\KillasTravel.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-17T05:52:54.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\Mappings\\MappingProfile.cs",
               "RelativeDocumentMoniker": "KillasTravel.Application\\Mappings\\MappingProfile.cs",
@@ -335,7 +364,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
+              "Title": "AlojamientoRepository.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Repositories\\AlojamientoRepository.cs",
+              "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\Repositories\\AlojamientoRepository.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Repositories\\AlojamientoRepository.cs",
+              "RelativeToolTip": "KillasTravel.Infrastructure\\Repositories\\AlojamientoRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T01:03:13.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "ITourRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\Interfaces\\ITourRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Application\\Interfaces\\ITourRepository.cs",
@@ -343,12 +384,11 @@
               "RelativeToolTip": "KillasTravel.Application\\Interfaces\\ITourRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T00:58:35.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T00:58:35.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "TransportesController.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\Controllers\\TransportesController.cs",
               "RelativeDocumentMoniker": "ProyKillas_Travel\\Controllers\\TransportesController.cs",
@@ -356,12 +396,11 @@
               "RelativeToolTip": "ProyKillas_Travel\\Controllers\\TransportesController.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAwwCIAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T01:43:53.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T01:43:53.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "IAlojamientoRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\Interfaces\\IAlojamientoRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Application\\Interfaces\\IAlojamientoRepository.cs",
@@ -369,12 +408,11 @@
               "RelativeToolTip": "KillasTravel.Application\\Interfaces\\IAlojamientoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T00:58:18.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T00:58:18.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "DetalleOrden.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Domain\\Entities\\DetalleOrden.cs",
               "RelativeDocumentMoniker": "KillasTravel.Domain\\Entities\\DetalleOrden.cs",
@@ -382,12 +420,11 @@
               "RelativeToolTip": "KillasTravel.Domain\\Entities\\DetalleOrden.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T19:47:02.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T19:47:02.514Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Transporte.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Domain\\Entities\\Transporte.cs",
               "RelativeDocumentMoniker": "KillasTravel.Domain\\Entities\\Transporte.cs",
@@ -395,12 +432,11 @@
               "RelativeToolTip": "KillasTravel.Domain\\Entities\\Transporte.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwBoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T19:46:28.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T19:46:28.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Tour.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Domain\\Entities\\Tour.cs",
               "RelativeDocumentMoniker": "KillasTravel.Domain\\Entities\\Tour.cs",
@@ -408,12 +444,11 @@
               "RelativeToolTip": "KillasTravel.Domain\\Entities\\Tour.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T19:46:11.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T19:46:11.843Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Alojamiento.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Domain\\Entities\\Alojamiento.cs",
               "RelativeDocumentMoniker": "KillasTravel.Domain\\Entities\\Alojamiento.cs",
@@ -421,12 +456,11 @@
               "RelativeToolTip": "KillasTravel.Domain\\Entities\\Alojamiento.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T19:46:20.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T19:46:20.363Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "TransporteTarifa.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Domain\\Entities\\TransporteTarifa.cs",
               "RelativeDocumentMoniker": "KillasTravel.Domain\\Entities\\TransporteTarifa.cs",
@@ -434,12 +468,11 @@
               "RelativeToolTip": "KillasTravel.Domain\\Entities\\TransporteTarifa.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T02:59:23.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T02:59:23.315Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "20251117030031_AddTransporteTarifas.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Migrations\\20251117030031_AddTransporteTarifas.cs",
               "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\Migrations\\20251117030031_AddTransporteTarifas.cs",
@@ -447,12 +480,11 @@
               "RelativeToolTip": "KillasTravel.Infrastructure\\Migrations\\20251117030031_AddTransporteTarifas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T03:00:32.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T03:00:32.053Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 48,
               "Title": "20251117030550_FinalSchemaSetup.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Migrations\\20251117030550_FinalSchemaSetup.cs",
               "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\Migrations\\20251117030550_FinalSchemaSetup.cs",
@@ -460,12 +492,11 @@
               "RelativeToolTip": "KillasTravel.Infrastructure\\Migrations\\20251117030550_FinalSchemaSetup.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAgwBoAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T03:05:50.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T03:05:50.924Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "DestinosController.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\Controllers\\DestinosController.cs",
               "RelativeDocumentMoniker": "ProyKillas_Travel\\Controllers\\DestinosController.cs",
@@ -473,12 +504,11 @@
               "RelativeToolTip": "ProyKillas_Travel\\Controllers\\DestinosController.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwFMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T01:34:42.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T01:34:42.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "KillasTravelDbContext.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\BD\\KillasTravelDbContext.cs",
               "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\BD\\KillasTravelDbContext.cs",
@@ -486,12 +516,11 @@
               "RelativeToolTip": "KillasTravel.Infrastructure\\BD\\KillasTravelDbContext.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAA1wB0AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T19:42:10.491Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T19:42:10.491Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "ProyKillas_Travel\\Controllers\\WeatherForecastController.cs",
@@ -499,12 +528,11 @@
               "RelativeToolTip": "ProyKillas_Travel\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T01:53:38.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T01:53:38.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Destino.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Domain\\Entities\\Destino.cs",
               "RelativeDocumentMoniker": "KillasTravel.Domain\\Entities\\Destino.cs",
@@ -516,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "DestinoRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Repositories\\DestinoRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\Repositories\\DestinoRepository.cs",
@@ -528,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Region.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Domain\\Entities\\Region.cs",
               "RelativeDocumentMoniker": "KillasTravel.Domain\\Entities\\Region.cs",
@@ -540,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "IUsuarioRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\Interfaces\\IUsuarioRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Application\\Interfaces\\IUsuarioRepository.cs",
@@ -552,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "PaqueteServicio.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Domain\\Entities\\PaqueteServicio.cs",
               "RelativeDocumentMoniker": "KillasTravel.Domain\\Entities\\PaqueteServicio.cs",
@@ -564,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "IPaqueteServicioRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\Interfaces\\IPaqueteServicioRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Application\\Interfaces\\IPaqueteServicioRepository.cs",
@@ -576,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "IPaqueteRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\Interfaces\\IPaqueteRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Application\\Interfaces\\IPaqueteRepository.cs",
@@ -588,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "IOrdenRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\Interfaces\\IOrdenRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Application\\Interfaces\\IOrdenRepository.cs",
@@ -600,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "IDestinoRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\Interfaces\\IDestinoRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Application\\Interfaces\\IDestinoRepository.cs",
@@ -612,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "UsuarioRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Repositories\\UsuarioRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\Repositories\\UsuarioRepository.cs",
@@ -624,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "PaqueteServicioRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Repositories\\PaqueteServicioRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\Repositories\\PaqueteServicioRepository.cs",
@@ -636,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "PaqueteRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Repositories\\PaqueteRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\Repositories\\PaqueteRepository.cs",
@@ -648,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "OrdenRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Repositories\\OrdenRepository.cs",
               "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\Repositories\\OrdenRepository.cs",
@@ -660,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "KillasTravel.Infrastructure.csproj",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\KillasTravel.Infrastructure.csproj",
               "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\KillasTravel.Infrastructure.csproj",
@@ -672,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "20251116201244_InitialCreate.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Migrations\\20251116201244_InitialCreate.cs",
               "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\Migrations\\20251116201244_InitialCreate.cs",
@@ -684,7 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "Orden.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Domain\\Entities\\Orden.cs",
               "RelativeDocumentMoniker": "KillasTravel.Domain\\Entities\\Orden.cs",
@@ -696,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "Paquete.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Domain\\Entities\\Paquete.cs",
               "RelativeDocumentMoniker": "KillasTravel.Domain\\Entities\\Paquete.cs",
@@ -708,7 +736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "Usuario.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Domain\\Entities\\Usuario.cs",
               "RelativeDocumentMoniker": "KillasTravel.Domain\\Entities\\Usuario.cs",
@@ -720,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Domain\\Class1.cs",
               "RelativeDocumentMoniker": "KillasTravel.Domain\\Class1.cs",
@@ -732,7 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "Microsoft.NET.EolTargetFrameworks.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.307\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.307\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
@@ -742,19 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\appsettings.json",
-              "RelativeDocumentMoniker": "ProyKillas_Travel\\appsettings.json",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\appsettings.json",
-              "RelativeToolTip": "ProyKillas_Travel\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-16T19:19:14.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "KillasTravel.Api.csproj",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\ProyKillas_Travel\\KillasTravel.Api.csproj",
               "RelativeDocumentMoniker": "ProyKillas_Travel\\KillasTravel.Api.csproj",
@@ -766,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Infrastructure\\Class1.cs",
               "RelativeDocumentMoniker": "KillasTravel.Infrastructure\\Class1.cs",
@@ -778,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\SlnKillas_Travel\\KillasTravel.Application\\Class1.cs",
               "RelativeDocumentMoniker": "KillasTravel.Application\\Class1.cs",
