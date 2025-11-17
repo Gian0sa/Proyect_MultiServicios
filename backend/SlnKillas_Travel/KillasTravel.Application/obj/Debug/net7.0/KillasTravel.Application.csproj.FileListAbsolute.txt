@@ -1,0 +1,16 @@
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\bin\Debug\net7.0\KillasTravel.Application.deps.json
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\bin\Debug\net7.0\KillasTravel.Application.dll
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\bin\Debug\net7.0\KillasTravel.Application.pdb
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\bin\Debug\net7.0\KillasTravel.Domain.dll
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\bin\Debug\net7.0\KillasTravel.Domain.pdb
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\obj\Debug\net7.0\KillasTravel.Application.csproj.AssemblyReference.cache
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\obj\Debug\net7.0\KillasTravel.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\obj\Debug\net7.0\KillasTravel.Application.AssemblyInfoInputs.cache
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\obj\Debug\net7.0\KillasTravel.Application.AssemblyInfo.cs
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\obj\Debug\net7.0\KillasTravel.Application.csproj.CoreCompileInputs.cache
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\obj\Debug\net7.0\KillasTravel.Application.sourcelink.json
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\obj\Debug\net7.0\KillasTr.D9042172.Up2Date
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\obj\Debug\net7.0\KillasTravel.Application.dll
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\obj\Debug\net7.0\refint\KillasTravel.Application.dll
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\obj\Debug\net7.0\KillasTravel.Application.pdb
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Application\obj\Debug\net7.0\ref\KillasTravel.Application.dll

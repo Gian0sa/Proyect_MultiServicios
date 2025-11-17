@@ -1,0 +1,12 @@
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Domain\bin\Debug\net7.0\KillasTravel.Domain.deps.json
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Domain\bin\Debug\net7.0\KillasTravel.Domain.dll
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Domain\bin\Debug\net7.0\KillasTravel.Domain.pdb
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Domain\obj\Debug\net7.0\KillasTravel.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Domain\obj\Debug\net7.0\KillasTravel.Domain.AssemblyInfoInputs.cache
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Domain\obj\Debug\net7.0\KillasTravel.Domain.AssemblyInfo.cs
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Domain\obj\Debug\net7.0\KillasTravel.Domain.csproj.CoreCompileInputs.cache
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Domain\obj\Debug\net7.0\KillasTravel.Domain.sourcelink.json
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Domain\obj\Debug\net7.0\KillasTravel.Domain.dll
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Domain\obj\Debug\net7.0\refint\KillasTravel.Domain.dll
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Domain\obj\Debug\net7.0\KillasTravel.Domain.pdb
+D:\Descargas\Proyect_Full_Stack\backend\SlnKillas_Travel\KillasTravel.Domain\obj\Debug\net7.0\ref\KillasTravel.Domain.dll
