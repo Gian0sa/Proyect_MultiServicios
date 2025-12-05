@@ -170,4 +170,4 @@ http://localhost:5029/api/Alojamientos
   "categoria": "4 estrellas",
   "destinoID": 1, 
   "destino": null
-}
+}# Proyect_MultiServicios
