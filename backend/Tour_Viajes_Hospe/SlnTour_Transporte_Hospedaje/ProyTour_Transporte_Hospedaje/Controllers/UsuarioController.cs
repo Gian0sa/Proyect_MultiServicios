@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using ProyTour_Transporte_Hospedaje.Dtos;
+using ProyTour_Transporte_Hospedaje.Dtos.Logeo;
 using ProyTour_Transporte_Hospedaje.Interfaces;
 using ProyTour_Transporte_Hospedaje.Models;
 
@@ -91,14 +91,15 @@ namespace ProyTour_Transporte_Hospedaje.Controllers
 
             // 6. CREAR Y DEVOLVER EL TOKEN (¡Éxito!)
             var token = _tokenService.CrearToken(usuario);
-
+            var rol = usuario.IdRols?.FirstOrDefault()?.NombreRol?.ToUpper() ?? "CLIENTE";
             // Devolvemos el token JWT al cliente
             return Ok(new
             {
                 Token = token,
                 UsuarioId = usuario.IdUsuario,
                 Nombre = usuario.Nombre,
-                Email = usuario.Email
+                Email = usuario.Email,
+                Role=rol
             });
         }
 

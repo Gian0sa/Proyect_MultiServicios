@@ -630,7 +630,7 @@
     "Parameters": [
       {
         "Name": "loginDto",
-        "Type": "ProyTour_Transporte_Hospedaje.Dtos.LoginDto",
+        "Type": "ProyTour_Transporte_Hospedaje.Dtos.Logeo.LoginDto",
         "IsRequired": true
       }
     ],
@@ -646,7 +646,7 @@
     "Parameters": [
       {
         "Name": "usuarioDto",
-        "Type": "ProyTour_Transporte_Hospedaje.Dtos.UsuarioCreateDto",
+        "Type": "ProyTour_Transporte_Hospedaje.Dtos.Logeo.UsuarioCreateDto",
         "IsRequired": true
       }
     ],

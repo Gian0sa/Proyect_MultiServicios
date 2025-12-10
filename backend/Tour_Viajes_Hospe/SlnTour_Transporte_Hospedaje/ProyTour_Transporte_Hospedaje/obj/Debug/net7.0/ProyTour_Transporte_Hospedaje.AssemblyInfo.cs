@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyTour_Transporte_Hospedaje")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df9158f665003ea8baf31479222b458d173fe9a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abd851db671c72ff0cc2f39ea1c5787650b81f18")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyTour_Transporte_Hospedaje")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyTour_Transporte_Hospedaje")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

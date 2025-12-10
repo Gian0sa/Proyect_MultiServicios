@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ProyTour_Transporte_Hospedaje.Dtos
+namespace ProyTour_Transporte_Hospedaje.Dtos.Logeo
 {
     public class LoginDto
     {
