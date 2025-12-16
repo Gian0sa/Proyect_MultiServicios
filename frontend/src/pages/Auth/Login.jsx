@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { usuarioService } from '../../api/usuarioService';
-// ¡IMPORTACIÓN ORIGINAL RESPETADA!
 import { useAuth } from '../../auth/AuthContext'; 
 import { LogIn } from 'lucide-react';
 
@@ -17,7 +16,6 @@ export default function Login() {
     setError(null); // Limpiamos errores antes de intentar el login
 
     try {
-      // CÓDIGO FUNCIONAL ORIGINAL, NO MODIFICADO
       const { data } = await usuarioService.login(email, password);
       login(data);
 
@@ -100,17 +98,16 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    // Fondo consistente con el de Registro
     background: 'linear-gradient(120deg, #1d2b3a, #2f455c, #4a6fa3)', 
   },
   card: {
     background: '#ffffff',
     padding: '2.5rem',
-    borderRadius: '18px', // Borde redondeado consistente
+    borderRadius: '18px',
     width: '100%',
-    maxWidth: '450px', // Ancho consistente
+    maxWidth: '450px',
     boxShadow: '0 20px 50px rgba(0,0,0,0.3)', 
-    borderTop: '5px solid #4a6fa3', // Color primario
+    borderTop: '5px solid #4a6fa3',
     display: 'flex',
     flexDirection: 'column',
     gap: '0.5rem' 
@@ -130,8 +127,8 @@ const styles = {
   },
   errorAlert: {
       padding: '1rem',
-      backgroundColor: '#f8d7da', // Fondo rojo claro para error
-      color: '#721c24', // Texto rojo oscuro
+      backgroundColor: '#f8d7da',
+      color: '#721c24',
       border: '1px solid #f5c6cb',
       borderRadius: '8px',
       marginBottom: '1rem',
@@ -150,12 +147,11 @@ const styles = {
     fontWeight: '600'
   },
   input: {
-    // ESTILOS CLAROS PARA LOS INPUTS (El problema original)
     width: '100%',
     padding: '0.8rem 1rem',
     borderRadius: '8px',
-    border: '1px solid #ccc', // Borde visible
-    background: '#f8f8f8', // Ligero color de fondo
+    border: '1px solid #ccc',
+    background: '#f8f8f8',
     transition: 'border-color 0.2s',
     boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.05)',
     ':focus': {
@@ -172,7 +168,7 @@ const styles = {
     marginTop: '1.5rem',
     borderRadius: '10px',
     border: 'none',
-    background: '#4a6fa3', // Botón principal
+    background: '#4a6fa3',
     color: '#fff',
     fontSize: '1rem',
     fontWeight: '700',

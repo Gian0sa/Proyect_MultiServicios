@@ -85,22 +85,21 @@ namespace ProyTour_Transporte_Hospedaje.Controllers
         // ==========================================================
         [HttpPost]
         [Authorize(Roles = "ADMIN, EMPLEADO")]
-        public async Task<ActionResult<TransporteReadDto>> PostTransporte([FromBody] TransporteCreateDto transporteDto)
+        public async Task<ActionResult<TransporteReadDto>> PostTransporte(
+     [FromBody] TransporteCreateDto transporteDto)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            // 1. Validación de Origen y Destino
+            // Validaciones
             if (await _destinoRepositorio.ObtenerPorIdAsync(transporteDto.IdOrigen) == null)
-            {
-                return BadRequest(new { message = $"El Destino de Origen con ID {transporteDto.IdOrigen} no existe." });
-            }
-            if (await _destinoRepositorio.ObtenerPorIdAsync(transporteDto.IdDestino) == null)
-            {
-                return BadRequest(new { message = $"El Destino Final con ID {transporteDto.IdDestino} no existe." });
-            }
+                return BadRequest($"Origen ID {transporteDto.IdOrigen} no existe");
 
-            // 2. Creación de las dos entidades
-            var servicioModel = new Servicio
+            if (await _destinoRepositorio.ObtenerPorIdAsync(transporteDto.IdDestino) == null)
+                return BadRequest($"Destino ID {transporteDto.IdDestino} no existe");
+
+            // 1️⃣ Crear SERVICIO
+            var servicio = new Servicio
             {
                 TipoServicio = "TRANSPORTE",
                 Nombre = transporteDto.Nombre,
@@ -108,31 +107,31 @@ namespace ProyTour_Transporte_Hospedaje.Controllers
                 PrecioBase = transporteDto.PrecioBase
             };
 
-            var transporteModel = new Transporte
+            // 2️⃣ Crear TRANSPORTE
+            var transporte = new Transporte
             {
                 IdOrigen = transporteDto.IdOrigen,
                 IdDestino = transporteDto.IdDestino,
                 Categoria = transporteDto.Categoria,
                 FechaSalida = transporteDto.FechaSalida,
-                FechaLlegada = transporteDto.FechaLlegada,
+                FechaLlegada = transporteDto.FechaLlegada
             };
 
-            // 3. Guardar en ambas tablas
-            await _repositorio.CrearTransporteAsync(servicioModel, transporteModel);
+            // 3️⃣ Guardar ambos
+            await _repositorio.CrearTransporteAsync(servicio, transporte);
 
-            if (await _repositorio.GuardarCambiosAsync())
-            {
-                // 4. Obtener el modelo guardado con todas las navegaciones cargadas
-                var transporteConRelaciones = await _repositorio.ObtenerPorIdAsync(transporteModel.IdTransporte);
+            if (!await _repositorio.GuardarCambiosAsync())
+                return StatusCode(500, "Error al guardar transporte");
 
-                // 5. Mapeo manual a DTO y respuesta
-                var responseDto = await MapearTransporteADtoAsync(transporteConRelaciones!);
+            // 4️⃣ Recargar con relaciones
+            var creado = await _repositorio.ObtenerPorIdAsync(transporte.IdTransporte);
 
-                return CreatedAtAction(nameof(GetTransportes),
-                    new { id = responseDto.IdTransporte }, responseDto);
-            }
-            return StatusCode(500, "Error al guardar el nuevo transporte.");
+            var dto = await MapearTransporteADtoAsync(creado!);
+
+            return CreatedAtAction(nameof(GetTransportes),
+                new { id = dto.IdTransporte }, dto);
         }
+
 
         // ==========================================================
         // PUT: /api/Transporte/5 (Actualizar - PROTEGIDO)

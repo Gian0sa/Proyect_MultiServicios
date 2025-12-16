@@ -17,10 +17,17 @@ namespace ProyTour_Transporte_Hospedaje.Repositorios
         // ================== CREATE ==================
         public async Task CrearTransporteAsync(Servicio servicio, Transporte transporte)
         {
+            // 1️⃣ Guardar Servicio
             await _context.Servicio.AddAsync(servicio);
-            transporte.IdServicioNavigation = servicio;
+            await _context.SaveChangesAsync(); // 🔥 OBLIGATORIO
+
+            // 2️⃣ Asociar FK explícitamente
+            transporte.IdServicio = servicio.IdServicio;
+
+            // 3️⃣ Guardar Transporte
             await _context.Transporte.AddAsync(transporte);
         }
+
 
         // ================== READ (Modelo Completo) ==================
         public async Task<Transporte?> ObtenerPorIdAsync(int idTransporte)

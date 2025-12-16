@@ -8,8 +8,6 @@ export default function Register() {
   const [apellido, setApellido] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  
-  // 1. Nuevo estado para el mensaje de éxito
   const [successMessage, setSuccessMessage] = useState(null); 
 
   const navigate = useNavigate();
@@ -31,7 +29,6 @@ export default function Register() {
       setEmail('');
       setPassword('');
 
-      // Redirigir al Login después de 3 segundos para que el usuario vea el mensaje
       setTimeout(() => {
           navigate('/login');
       }, 3000); 
