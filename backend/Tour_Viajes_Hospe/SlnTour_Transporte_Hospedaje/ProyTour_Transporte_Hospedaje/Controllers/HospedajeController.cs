@@ -186,5 +186,21 @@ namespace ProyTour_Transporte_Hospedaje.Controllers
 
             return StatusCode(500, "Error al eliminar el hospedaje.");
         }
+        // ==========================================================
+        // GET: /api/Hospedaje/5 (Obtener por ID - PÚBLICO)
+        // ==========================================================
+        [HttpGet("{id}")]
+        public async Task<ActionResult<HospedajeReadDto>> GetHospedaje(int id)
+        {
+            var hospedaje = await _repositorio.ObtenerPorIdAsync(id);
+
+            if (hospedaje == null)
+            {
+                return NotFound($"Hospedaje con ID {id} no encontrado.");
+            }
+
+            var dto = await MapearHospedajeADtoAsync(hospedaje);
+            return Ok(dto);
+        }
     }
 }

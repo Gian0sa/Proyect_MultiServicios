@@ -6,5 +6,6 @@ export const tourService = {
   create: (data) => api.post('/Tour', data),
   update: (id, data) => api.put(`/Tour/${id}`, data),
   delete: (id) => api.delete(`/Tour/${id}`),
+  getTop: () => api.get('/Tour?limit=4'),
 };
 

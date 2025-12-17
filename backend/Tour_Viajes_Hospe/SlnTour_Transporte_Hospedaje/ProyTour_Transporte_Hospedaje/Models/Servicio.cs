@@ -24,4 +24,6 @@ public partial class Servicio
     public virtual ICollection<Transporte> Transportes { get; set; } = new List<Transporte>();
 
     public virtual ICollection<VentaDetalle> VentaDetalles { get; set; } = new List<VentaDetalle>();
+
+    
 }

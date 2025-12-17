@@ -315,6 +315,45 @@
             "description": "Success"
           }
         }
+      },
+      "get": {
+        "tags": [
+          "Hospedaje"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HospedajeReadDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HospedajeReadDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HospedajeReadDto"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/api/Imagen/{tipoEntidad}/{idEntidad}": {
@@ -1094,6 +1133,45 @@
         "responses": {
           "200": {
             "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Transporte"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransporteReadDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransporteReadDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransporteReadDto"
+                }
+              }
+            }
           }
         }
       }

@@ -2,23 +2,31 @@ import { useEffect, useState } from 'react';
 import { transporteService } from '../../api/transporteService';
 import { destinoService } from '../../api/destinoService';
 
-export default function TransporteCreateModal({ onClose, onCreated }) {
-  const [form, setForm] = useState({
-    nombre: '',
-    descripcion: '',
-    precioBase: '',
-    idOrigen: '',
-    idDestino: '',
-    categoria: 'NORMAL',
-    fechaSalida: '',
-    fechaLlegada: '',
-  });
-
+export default function TransporteCreateModal({ onClose, onCreated, transporteToEdit }) {
   const [destinos, setDestinos] = useState([]);
   const [departamentos, setDepartamentos] = useState([]);
   const [deptoOrigen, setDeptoOrigen] = useState('');
   const [deptoDestino, setDeptoDestino] = useState('');
 
+  const [form, setForm] = useState({
+    idTransporte: transporteToEdit?.idTransporte || null,
+    nombre: transporteToEdit?.nombre || '',
+    descripcion: transporteToEdit?.descripcion || '',
+    precioBase: transporteToEdit?.precioBase || '',
+    idOrigen: transporteToEdit?.idOrigen || '',
+    idDestino: transporteToEdit?.idDestino || '',
+    categoria: transporteToEdit?.categoria || 'NORMAL',
+    fechaSalida: transporteToEdit
+      ? new Date(transporteToEdit.fechaSalida).toISOString().slice(0, 16)
+      : '',
+    fechaLlegada: transporteToEdit
+      ? new Date(transporteToEdit.fechaLlegada).toISOString().slice(0, 16)
+      : '',
+  });
+
+  /* ===============================
+     CARGAR DESTINOS (UNA SOLA VEZ)
+     =============================== */
   useEffect(() => {
     cargarDestinos();
   }, []);
@@ -27,6 +35,7 @@ export default function TransporteCreateModal({ onClose, onCreated }) {
     try {
       const { data } = await destinoService.getAll();
       setDestinos(data);
+
       const unicos = [
         ...new Map(
           data.map(d => [
@@ -44,27 +53,89 @@ export default function TransporteCreateModal({ onClose, onCreated }) {
     }
   };
 
+  /* ======================================================
+     🔑 CUANDO EDITO: SETEAR DEPARTAMENTOS Y DESTINOS
+     ====================================================== */
+  useEffect(() => {
+  if (!transporteToEdit || destinos.length === 0) return;
+
+  const destinoOrigen = destinos.find(
+    d => d.idDestino === transporteToEdit.idOrigen
+  );
+
+  const destinoFinal = destinos.find(
+    d => d.idDestino === transporteToEdit.idDestino
+  );
+
+  if (!destinoOrigen || !destinoFinal) return;
+
+  setDeptoOrigen(String(destinoOrigen.idDepartamento));
+  setDeptoDestino(String(destinoFinal.idDepartamento));
+
+  setForm(prev => ({
+    ...prev,
+    idOrigen: String(destinoOrigen.idDestino),
+    idDestino: String(destinoFinal.idDestino),
+  }));
+}, [transporteToEdit, destinos]);
+
+
+  /* ===============================
+     HANDLERS
+     =============================== */
+  const handleDeptoOrigenChange = (e) => {
+    const value = e.target.value;
+    setDeptoOrigen(value);
+
+    // 🔴 SOLO RESETEAR SI ESTOY CREANDO
+    if (!transporteToEdit) {
+      setForm(prev => ({ ...prev, idOrigen: '' }));
+    }
+  };
+
+  const handleDeptoDestinoChange = (e) => {
+    const value = e.target.value;
+    setDeptoDestino(value);
+
+    if (!transporteToEdit) {
+      setForm(prev => ({ ...prev, idDestino: '' }));
+    }
+  };
+
   const handleChange = (e) => {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
+  /* ===============================
+     SUBMIT
+     =============================== */
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (form.idOrigen === form.idDestino) {
       alert('Origen y destino no pueden ser iguales');
       return;
     }
+
+    const dataToSend = {
+      ...form,
+      precioBase: Number(form.precioBase),
+      idOrigen: Number(form.idOrigen),
+      idDestino: Number(form.idDestino),
+    };
+
     try {
-      await transporteService.create({
-        ...form,
-        precioBase: Number(form.precioBase),
-        idOrigen: Number(form.idOrigen),
-        idDestino: Number(form.idDestino),
-      });
+      if (transporteToEdit) {
+        await transporteService.update(form.idTransporte, dataToSend);
+      } else {
+        await transporteService.create(dataToSend);
+      }
+
       onCreated();
       onClose();
     } catch (error) {
-      alert('Error al crear transporte');
+      alert(`Error al ${transporteToEdit ? 'actualizar' : 'crear'} transporte`);
+      console.error(error);
     }
   };
 
@@ -72,108 +143,146 @@ export default function TransporteCreateModal({ onClose, onCreated }) {
     <div style={styles.overlay}>
       <form style={styles.modal} onSubmit={handleSubmit}>
         <div style={styles.header}>
-          <h3 style={styles.title}>➕ Nuevo Transporte</h3>
+          <h3 style={styles.title}>
+            {transporteToEdit ? '✏️ Editar Transporte' : '➕ Nuevo Transporte'}
+          </h3>
           <p style={styles.subtitle}>Complete los detalles del itinerario</p>
         </div>
 
         <div style={styles.scrollContainer}>
-          {/* Sección: Información General */}
           <div style={styles.sectionTitle}>Información General</div>
+
           <input
             name="nombre"
-            placeholder="Nombre del servicio (Ej: Bus Premium)"
+            placeholder="Nombre del servicio"
             style={styles.input}
-            required
+            value={form.nombre}
             onChange={handleChange}
+            required
           />
 
           <textarea
             name="descripcion"
-            placeholder="Descripción de la unidad o servicio..."
+            placeholder="Descripción del servicio"
             style={{ ...styles.input, ...styles.textarea }}
+            value={form.descripcion}
             onChange={handleChange}
           />
 
           <div style={styles.row}>
             <div style={styles.flex1}>
-              <label style={styles.label}>Precio Base (S/)</label>
+              <label style={styles.label}>Precio Base</label>
               <input
                 type="number"
                 name="precioBase"
-                placeholder="0.00"
                 style={styles.input}
-                required
+                value={form.precioBase}
                 onChange={handleChange}
+                required
               />
             </div>
+
             <div style={styles.flex1}>
               <label style={styles.label}>Categoría</label>
-              <select name="categoria" style={styles.input} onChange={handleChange}>
+              <select
+                name="categoria"
+                style={styles.input}
+                value={form.categoria}
+                onChange={handleChange}
+              >
                 <option value="NORMAL">NORMAL</option>
                 <option value="VIP">VIP</option>
               </select>
             </div>
           </div>
 
-          {/* Sección: Ruta */}
           <div style={styles.sectionTitle}>Definición de Ruta</div>
+
           <div style={styles.routeBox}>
             <div style={styles.row}>
-              <div style={styles.flex1}>
-                <select style={styles.input} onChange={e => setDeptoOrigen(e.target.value)} required>
-                  <option value="">Dep. Origen</option>
-                  {departamentos.map(d => (
-                    <option key={d.idDepartamento} value={d.idDepartamento}>{d.nombreDepartamento}</option>
+              <select style={styles.input} value={deptoOrigen} onChange={handleDeptoOrigenChange}>
+                <option value="">Dep. Origen</option>
+                {departamentos.map(d => (
+                  <option key={d.idDepartamento} value={d.idDepartamento}>
+                    {d.nombreDepartamento}
+                  </option>
+                ))}
+              </select>
+
+              <select
+                name="idOrigen"
+                style={styles.input}
+                value={form.idOrigen}
+                onChange={handleChange}
+              >
+                <option value="">Destino Origen</option>
+                {destinos
+                  .filter(d => d.idDepartamento == deptoOrigen)
+                  .map(d => (
+                    <option key={d.idDestino} value={d.idDestino}>
+                      {d.nombreDestino}
+                    </option>
                   ))}
-                </select>
-              </div>
-              <div style={styles.flex1}>
-                <select name="idOrigen" style={styles.input} onChange={handleChange} required>
-                  <option value="">Destino Origen</option>
-                  {destinos.filter(d => d.idDepartamento == deptoOrigen).map(d => (
-                    <option key={d.idDestino} value={d.idDestino}>{d.nombreDestino}</option>
-                  ))}
-                </select>
-              </div>
+              </select>
             </div>
 
             <div style={styles.row}>
-              <div style={styles.flex1}>
-                <select style={styles.input} onChange={e => setDeptoDestino(e.target.value)} required>
-                  <option value="">Dep. Destino</option>
-                  {departamentos.map(d => (
-                    <option key={d.idDepartamento} value={d.idDepartamento}>{d.nombreDepartamento}</option>
+              <select style={styles.input} value={deptoDestino} onChange={handleDeptoDestinoChange}>
+                <option value="">Dep. Destino</option>
+                {departamentos.map(d => (
+                  <option key={d.idDepartamento} value={d.idDepartamento}>
+                    {d.nombreDepartamento}
+                  </option>
+                ))}
+              </select>
+
+              <select
+                name="idDestino"
+                style={styles.input}
+                value={form.idDestino}
+                onChange={handleChange}
+              >
+                <option value="">Destino Final</option>
+                {destinos
+                  .filter(d => d.idDepartamento == deptoDestino)
+                  .map(d => (
+                    <option key={d.idDestino} value={d.idDestino}>
+                      {d.nombreDestino}
+                    </option>
                   ))}
-                </select>
-              </div>
-              <div style={styles.flex1}>
-                <select name="idDestino" style={styles.input} onChange={handleChange} required>
-                  <option value="">Destino Final</option>
-                  {destinos.filter(d => d.idDepartamento == deptoDestino).map(d => (
-                    <option key={d.idDestino} value={d.idDestino}>{d.nombreDestino}</option>
-                  ))}
-                </select>
-              </div>
+              </select>
             </div>
           </div>
 
-          {/* Sección: Horarios */}
           <div style={styles.sectionTitle}>Horarios</div>
+
           <div style={styles.row}>
-            <div style={styles.flex1}>
-              <label style={styles.label}>Fecha Salida</label>
-              <input type="datetime-local" name="fechaSalida" style={styles.input} required onChange={handleChange} />
-            </div>
-            <div style={styles.flex1}>
-              <label style={styles.label}>Fecha Llegada</label>
-              <input type="datetime-local" name="fechaLlegada" style={styles.input} required onChange={handleChange} />
-            </div>
+            <input
+              type="datetime-local"
+              name="fechaSalida"
+              style={styles.input}
+              value={form.fechaSalida}
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="datetime-local"
+              name="fechaLlegada"
+              style={styles.input}
+              value={form.fechaLlegada}
+              onChange={handleChange}
+              required
+            />
           </div>
         </div>
 
         <div style={styles.actions}>
-          <button type="button" onClick={onClose} style={styles.btnCancel}>Cancelar</button>
-          <button type="submit" style={styles.btnSave}>Guardar Transporte</button>
+          <button type="button" onClick={onClose} style={styles.btnCancel}>
+            Cancelar
+          </button>
+          <button type="submit" style={styles.btnSave}>
+            {transporteToEdit ? 'Actualizar Transporte' : 'Guardar Transporte'}
+          </button>
         </div>
       </form>
     </div>
@@ -184,7 +293,7 @@ const styles = {
   overlay: {
     position: 'fixed',
     inset: 0,
-    background: 'rgba(15, 23, 42, 0.75)', // Azul oscuro translúcido
+    background: 'rgba(15, 23, 42, 0.75)',
     backdropFilter: 'blur(4px)',
     display: 'flex',
     justifyContent: 'center',

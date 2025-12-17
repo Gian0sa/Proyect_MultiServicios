@@ -175,6 +175,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ProyTour_Transporte_Hospedaje.Controllers.HospedajeController",
+    "Method": "GetHospedaje",
+    "RelativePath": "api/Hospedaje/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProyTour_Transporte_Hospedaje.Dtos.HospedajeDto.HospedajeReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ProyTour_Transporte_Hospedaje.Controllers.ImagenController",
     "Method": "PostImagen",
     "RelativePath": "api/Imagen",
@@ -619,6 +645,32 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyTour_Transporte_Hospedaje.Controllers.TransporteController",
+    "Method": "GetTransporte",
+    "RelativePath": "api/Transporte/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProyTour_Transporte_Hospedaje.Dtos.TransporteDto.TransporteReadDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "ProyTour_Transporte_Hospedaje.Controllers.UsuarioController",

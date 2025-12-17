@@ -11,15 +11,22 @@ import Dashboard from '../pages/Admin/Dashboard';
 import AdminLayout from '../layouts/AdminLayout';
 import PrivateRoute from '../auth/PrivateRoute';
 
+import ToursPage from '../pages/Tours/ToursPage';
+import TransportePage from '../pages/Transporte/TransportePage';
+import HospedajePage from '../pages/Hospedaje/HospedajePage'; 
+import PaquetePage from '../pages/Paquetes/PaquetePage';
 export default function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
         {/* ================= PUBLIC ================= */}
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<ClientPage  />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-
+        <Route path="/paquetes" element={<PaquetePage />} />
+        <Route path="/tours" element={<ToursPage />} />
+        <Route path="/transportes" element={<TransportePage />} />
+         <Route path="/hospedajes" element={<HospedajePage />} />
         {/* ================= ADMIN ================= */}
         <Route
           path="/admin"

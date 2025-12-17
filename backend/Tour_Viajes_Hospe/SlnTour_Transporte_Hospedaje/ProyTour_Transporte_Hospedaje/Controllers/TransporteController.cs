@@ -201,5 +201,33 @@ namespace ProyTour_Transporte_Hospedaje.Controllers
 
             return StatusCode(500, "Error al eliminar el transporte.");
         }
+        // ==========================================================
+        // GET: /api/Transporte/5 (Obtener por ID - PÚBLICO)
+        // ==========================================================
+        [HttpGet("{id}")]
+        public async Task<ActionResult<TransporteReadDto>> GetTransporte(int id)
+        {
+            var transporte = await _repositorio.ObtenerPorIdAsync(id);
+
+            if (transporte == null)
+            {
+                return NotFound($"Transporte con ID {id} no encontrado.");
+            }
+
+            var dto = await MapearTransporteADtoAsync(transporte);
+
+            // 🔍 DEBUG: Imprime cuántas imágenes hay
+            Console.WriteLine($"Imágenes obtenidas: {dto.Imagenes?.Count ?? 0}");
+            if (dto.Imagenes != null)
+            {
+                foreach (var img in dto.Imagenes)
+                {
+                    Console.WriteLine($"  - URL: {img.Url}");
+                }
+            }
+
+            return Ok(dto);
+        }
+
     }
 }

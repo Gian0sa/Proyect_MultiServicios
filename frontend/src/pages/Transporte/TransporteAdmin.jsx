@@ -4,7 +4,10 @@ import TransporteCreateModal from './TransporteCreateModal';
 
 export default function TransporteAdmin() {
   const [transportes, setTransportes] = useState([]);
-  const [showCreate, setShowCreate] = useState(false);
+  // CAMBIO: Usamos 'showModal' para controlar ambos flujos (Crear/Editar)
+  const [showModal, setShowModal] = useState(false); 
+  // CAMBIO: Estado para almacenar el objeto a editar
+  const [transporteToEdit, setTransporteToEdit] = useState(null); 
 
   useEffect(() => {
     cargarTransportes();
@@ -17,6 +20,24 @@ export default function TransporteAdmin() {
     } catch (error) {
       console.error('Error al cargar transportes', error);
     }
+  };
+
+  // 1. Función para abrir el modal en modo CREACIÓN
+  const handleOpenCreate = () => {
+    setTransporteToEdit(null); // Modo Creación
+    setShowModal(true);
+  };
+
+  // 2. Función para abrir el modal en modo EDICIÓN
+  const editar = (transporte) => {
+    setTransporteToEdit(transporte); // Carga el objeto
+    setShowModal(true); // Abre el modal
+  };
+
+  // 3. Función para cerrar el modal y limpiar el estado de edición
+  const handleCloseModal = () => {
+    setShowModal(false);
+    setTransporteToEdit(null); // Limpia el objeto de edición al cerrar
   };
 
   const eliminar = async (id) => {
@@ -41,7 +62,7 @@ export default function TransporteAdmin() {
 
         <button
           style={styles.createBtn}
-          onClick={() => setShowCreate(true)}
+          onClick={handleOpenCreate} // Usamos la nueva función para Crear
         >
           <span style={{ fontSize: '1.2rem' }}>+</span> Nuevo Transporte
         </button>
@@ -82,7 +103,13 @@ export default function TransporteAdmin() {
                 <td style={styles.tdDate}>{new Date(t.fechaLlegada).toLocaleString([], { dateStyle: 'short', timeStyle: 'short' })}</td>
                 <td style={styles.tdAction}>
                   <div style={styles.actionGroup}>
-                    <button style={styles.edit}>Editar</button>
+                    {/* Botón de Editar llama a la función 'editar' */}
+                    <button 
+                      style={styles.edit}
+                      onClick={() => editar(t)} 
+                    >
+                      Editar
+                    </button>
                     <button
                       style={styles.delete}
                       onClick={() => eliminar(t.idTransporte)}
@@ -97,10 +124,12 @@ export default function TransporteAdmin() {
         </table>
       </div>
 
-      {showCreate && (
+      {/* RENDERIZADO DEL MODAL (ÚNICO) */}
+      {showModal && (
         <TransporteCreateModal
-          onClose={() => setShowCreate(false)}
-          onCreated={cargarTransportes}
+          onClose={handleCloseModal} // Función para cerrar y limpiar estados
+          onCreated={cargarTransportes} // Función para refrescar la lista después de Guardar/Actualizar
+          transporteToEdit={transporteToEdit} // Pasa el objeto (será null si es creación)
         />
       )}
     </div>
@@ -108,6 +137,7 @@ export default function TransporteAdmin() {
 }
 
 const styles = {
+  // ... (Todos tus estilos aquí) ...
   pageContainer: {
     padding: '2.5rem',
     backgroundColor: '#f8fafc',
