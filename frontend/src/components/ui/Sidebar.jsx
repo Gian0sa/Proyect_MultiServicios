@@ -6,11 +6,33 @@ export default function Sidebar() {
       <h2 style={styles.logo}>🌙 Admin</h2>
 
       <nav style={styles.menu}>
-        <NavLink to="/admin" style={styles.link}>📊 Dashboard</NavLink>
-        <NavLink to="/admin/transportes" style={styles.link}>🚌 Transporte</NavLink>
-        <NavLink to="/admin/paquetes" style={styles.link}>📦 Paquetes</NavLink>
-        <NavLink to="/admin/tours" style={styles.link}>🗺️ Tours</NavLink>
-        <NavLink to="/admin/ventas" style={styles.link}>💰 Ventas</NavLink>
+        <NavLink to="/admin" end style={({ isActive }) => ({...styles.link, ...(isActive ? styles.linkActive : {})})}>
+          📊 Dashboard
+        </NavLink>
+        <NavLink to="/admin/servicios" style={({ isActive }) => ({...styles.link, ...(isActive ? styles.linkActive : {})})}>
+          ⚙️ Servicios
+        </NavLink>
+        <NavLink to="/admin/hospedajes" style={({ isActive }) => ({...styles.link, ...(isActive ? styles.linkActive : {})})}>
+          🏨 Hospedajes
+        </NavLink>
+        <NavLink to="/admin/tours" style={({ isActive }) => ({...styles.link, ...(isActive ? styles.linkActive : {})})}>
+          🗺️ Tours
+        </NavLink>
+        <NavLink to="/admin/transportes" style={({ isActive }) => ({...styles.link, ...(isActive ? styles.linkActive : {})})}>
+          🚌 Transportes
+        </NavLink>
+        <NavLink to="/admin/paquetes" style={({ isActive }) => ({...styles.link, ...(isActive ? styles.linkActive : {})})}>
+          📦 Paquetes
+        </NavLink>
+        <NavLink to="/admin/ventas" style={({ isActive }) => ({...styles.link, ...(isActive ? styles.linkActive : {})})}>
+          💰 Ventas
+        </NavLink>
+        <NavLink to="/admin/imagenes" style={({ isActive }) => ({...styles.link, ...(isActive ? styles.linkActive : {})})}>
+          🖼️ Imágenes
+        </NavLink>
+        <NavLink to="/admin/usuarios" style={({ isActive }) => ({...styles.link, ...(isActive ? styles.linkActive : {})})}>
+          👥 Usuarios
+        </NavLink>
       </nav>
     </aside>
   );
@@ -33,7 +55,16 @@ const styles = {
     gap: '1rem',
   },
   link: {
-    color: '#fff',
+    color: '#cbd5e1',
     textDecoration: 'none',
+    padding: '0.75rem 1rem',
+    borderRadius: '8px',
+    transition: 'all 0.2s',
+    display: 'block',
+  },
+  linkActive: {
+    backgroundColor: '#1e293b',
+    color: '#fff',
+    fontWeight: '600',
   },
 };

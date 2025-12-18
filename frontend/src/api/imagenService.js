@@ -6,6 +6,6 @@ export const imagenService = {
   create: (data) => api.post('/Imagen', data),
   delete: (id) => api.delete(`/Imagen/${id}`),
   getByEntidad: (tipoEntidad, idEntidad) => 
-    api.get(`/Imagen/entidad/${tipoEntidad}/${idEntidad}`),
+    api.get(`/Imagen/${tipoEntidad}/${idEntidad}`),
 };
 

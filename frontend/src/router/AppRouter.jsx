@@ -7,6 +7,13 @@ import ClientPage from '../pages/Home/ClientPage';
 
 import TransporteAdmin from '../pages/Transporte/TransporteAdmin';
 import Dashboard from '../pages/Admin/Dashboard';
+import ServicioAdmin from '../pages/Admin/ServicioAdmin';
+import TourAdmin from '../pages/Admin/TourAdmin';
+import VentaAdmin from '../pages/Admin/VentaAdmin';
+import UsuarioAdmin from '../pages/Admin/UsuarioAdmin';
+import HospedajeAdmin from '../pages/Admin/HospedajeAdmin';
+import ImagenAdmin from '../pages/Admin/ImagenAdmin';
+import PaqueteAdmin from "../pages/Paquetes/PaqueteAdmin";
 
 import AdminLayout from '../layouts/AdminLayout';
 import PrivateRoute from '../auth/PrivateRoute';
@@ -45,7 +52,14 @@ export default function AppRouter() {
           }
         >
           <Route index element={<Dashboard />} />
+          <Route path="servicios" element={<ServicioAdmin />} />
+          <Route path="hospedajes" element={<HospedajeAdmin />} />
+          <Route path="tours" element={<TourAdmin />} />
           <Route path="transportes" element={<TransporteAdmin />} />
+          <Route path="paquetes" element={<PaqueteAdmin />} />
+          <Route path="ventas" element={<VentaAdmin />} />
+          <Route path="usuarios" element={<UsuarioAdmin />} />
+          <Route path="imagenes" element={<ImagenAdmin />} />
         </Route>
 
         {/* ================= CLIENTE ================= */}

@@ -190,7 +190,6 @@ namespace ProyTour_Transporte_Hospedaje.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
-            // 1. Validación de Servicios (FKs)
             if (paqueteDto.Servicios == null || !paqueteDto.Servicios.Any())
             {
                 return BadRequest(new { message = "El paquete debe contener al menos un servicio." });
@@ -204,39 +203,33 @@ namespace ProyTour_Transporte_Hospedaje.Controllers
                 }
             }
 
-            var paqueteExistente = await _repositorio.ObtenerPorIdAsync(id);
+            var paqueteExistente = await _context.Paquete
+                .Include(p => p.PaqueteDetalles)
+                .FirstOrDefaultAsync(p => p.IdPaquete == id);
+
             if (paqueteExistente == null)
             {
                 return NotFound($"Paquete con ID {id} no encontrado.");
             }
 
-            // 3. Mapeo Manual: Actualizar propiedades básicas
+            // Datos básicos
             paqueteExistente.Nombre = paqueteDto.Nombre;
             paqueteExistente.Descripcion = paqueteDto.Descripcion;
             paqueteExistente.PrecioTotal = paqueteDto.PrecioTotal;
             paqueteExistente.EsPromocion = paqueteDto.EsPromocion;
 
+            // 🔥 ELIMINAR DETALLES ANTIGUOS (CLAVE)
+            _context.PaqueteDetalle.RemoveRange(paqueteExistente.PaqueteDetalles);
 
-            paqueteExistente.PaqueteDetalles.Clear();
-
-            foreach (var servicioItem in paqueteDto.Servicios)
+            // 🔥 CREAR NUEVOS DETALLES
+            paqueteExistente.PaqueteDetalles = paqueteDto.Servicios.Select(s => new PaqueteDetalle
             {
-                paqueteExistente.PaqueteDetalles.Add(new PaqueteDetalle
-                {
-                    IdPaquete = id,
-                    IdServicio = servicioItem.IdServicio
-                });
-            }
+                IdPaquete = paqueteExistente.IdPaquete,
+                IdServicio = s.IdServicio
+            }).ToList();
 
-            // 5. Guardar los cambios
-            _repositorio.Actualizar(paqueteExistente);
-
-            if (await _repositorio.GuardarCambiosAsync())
-            {
-                return NoContent(); // 204 No Content
-            }
-
-            return StatusCode(500, "Error al actualizar el paquete.");
+            await _context.SaveChangesAsync();
+            return NoContent(); // 204
         }
 
         // DELETE: /api/Paquete/5 (Eliminar - PROTEGIDO)
