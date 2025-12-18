@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\dtos\\paquetedto\\detalle\\paquetedetallereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\dtos\\paquetedto\\detalle\\paquetedetallereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\controllers\\paquetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\controllers\\paquetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\repositorios\\paqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\repositorios\\paqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\interfaces\\ipaqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\interfaces\\ipaqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\dtos\\paquetedto\\paquetereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\dtos\\paquetedto\\paquetereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\dtos\\paquetedto\\paquetebasicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\dtos\\paquetedto\\paquetebasicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\dtos\\paquetedto\\detalle\\paqueteserviciodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\dtos\\paquetedto\\detalle\\paqueteserviciodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\models\\paquetedetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\models\\paquetedetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\models\\paquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\models\\paquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\repositorios\\paqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\repositorios\\paqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\controllers\\hospedajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\models\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\interfaces\\ipaqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\interfaces\\ipaqueterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\interfaces\\ihospedajerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\interfaces\\ihospedajerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -65,10 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\models\\transporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\models\\transporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\controllers\\paquetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\controllers\\paquetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -155,36 +175,16 @@
       "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\dtos\\imagendto\\imagenreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\dtos\\paquetedto\\detalle\\paquetedetallereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\dtos\\paquetedto\\detalle\\paquetedetallereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\dtos\\paquetedto\\detalle\\paqueteserviciodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\dtos\\paquetedto\\detalle\\paqueteserviciodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\dtos\\paquetedto\\paqueteupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\dtos\\paquetedto\\paqueteupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\dtos\\paquetedto\\paquetereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\dtos\\paquetedto\\paquetereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\dtos\\paquetedto\\paquetecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\dtos\\paquetedto\\paquetecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\dtos\\paquetedto\\paquetebasicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\dtos\\paquetedto\\paquetebasicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\interfaces\\iventarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\interfaces\\iventarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|solutionrelative:proytour_transporte_hospedaje\\controllers\\ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2929606-3523-831E-EA97-777C2D4E8051}|ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj|d:\\descargas\\proyect_full_stack\\backend\\tour_viajes_hospe\\slntour_transporte_hospedaje\\proytour_transporte_hospedaje\\interfaces\\itourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -326,7 +326,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -335,136 +335,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "TransporteController.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\TransporteController.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Controllers\\TransporteController.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\TransporteController.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Controllers\\TransporteController.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAswOUAAAAJAAAAAAAAAA==",
+              "Title": "PaqueteReadDto.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteReadDto.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteReadDto.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteReadDto.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteReadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T05:17:05.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PaqueteDetalle.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\PaqueteDetalle.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Models\\PaqueteDetalle.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\PaqueteDetalle.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Models\\PaqueteDetalle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T20:55:12.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IHospedajeRepository.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Interfaces\\IHospedajeRepository.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Interfaces\\IHospedajeRepository.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Interfaces\\IHospedajeRepository.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Interfaces\\IHospedajeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T04:48:46.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ImagenRepository.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\ImagenRepository.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Repositorios\\ImagenRepository.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\ImagenRepository.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Repositorios\\ImagenRepository.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T04:27:52.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HospedajeController.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\HospedajeController.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Controllers\\HospedajeController.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\HospedajeController.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Controllers\\HospedajeController.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAAA7wMsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T04:51:23.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Servicio.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\Servicio.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Models\\Servicio.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\Servicio.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Models\\Servicio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T04:25:15.841Z",
+              "WhenOpened": "2025-12-04T05:45:25.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "HospedajeRepository.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\HospedajeRepository.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Repositorios\\HospedajeRepository.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\HospedajeRepository.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Repositorios\\HospedajeRepository.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAYwFgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T04:49:16.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PaqueteRepository.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\PaqueteRepository.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Repositorios\\PaqueteRepository.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\PaqueteRepository.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Repositorios\\PaqueteRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAuwEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T05:56:08.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Paquete.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\Paquete.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Models\\Paquete.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\Paquete.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Models\\Paquete.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T20:55:14.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TourRepository.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\TourRepository.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Repositorios\\TourRepository.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\TourRepository.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Repositorios\\TourRepository.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAmwBoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T05:05:44.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "IPaqueteRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Interfaces\\IPaqueteRepository.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Interfaces\\IPaqueteRepository.cs",
@@ -477,7 +360,194 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PaqueteBasicDto.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteBasicDto.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteBasicDto.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteBasicDto.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteBasicDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T05:47:24.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PaqueteRepository.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\PaqueteRepository.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Repositorios\\PaqueteRepository.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\PaqueteRepository.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Repositorios\\PaqueteRepository.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T05:56:08.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VentaController.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\VentaController.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Controllers\\VentaController.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\VentaController.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Controllers\\VentaController.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAcwGwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T20:36:15.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaqueteDetalleReadDto.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteDetalleReadDto.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteDetalleReadDto.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteDetalleReadDto.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteDetalleReadDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA9wBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T05:46:18.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaqueteController.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\PaqueteController.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Controllers\\PaqueteController.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\PaqueteController.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Controllers\\PaqueteController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAqwHAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T06:03:05.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Paquete.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\Paquete.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Models\\Paquete.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\Paquete.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Models\\Paquete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T20:55:14.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HospedajeRepository.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\HospedajeRepository.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Repositorios\\HospedajeRepository.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\HospedajeRepository.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Repositorios\\HospedajeRepository.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAYwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T04:49:16.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Servicio.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\Servicio.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Models\\Servicio.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\Servicio.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Models\\Servicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T04:25:15.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PaqueteDetalle.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\PaqueteDetalle.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Models\\PaqueteDetalle.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\PaqueteDetalle.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Models\\PaqueteDetalle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T20:55:12.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "PaqueteServicioDto.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteServicioDto.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteServicioDto.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteServicioDto.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteServicioDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T05:49:16.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HospedajeController.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\HospedajeController.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Controllers\\HospedajeController.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\HospedajeController.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Controllers\\HospedajeController.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAA7wMsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T04:51:23.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ImagenRepository.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\ImagenRepository.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Repositorios\\ImagenRepository.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\ImagenRepository.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Repositorios\\ImagenRepository.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T04:27:52.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IHospedajeRepository.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Interfaces\\IHospedajeRepository.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Interfaces\\IHospedajeRepository.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Interfaces\\IHospedajeRepository.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Interfaces\\IHospedajeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T04:48:46.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TransporteController.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\TransporteController.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Controllers\\TransporteController.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\TransporteController.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Controllers\\TransporteController.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAswOUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T05:17:05.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TourRepository.cs",
+              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\TourRepository.cs",
+              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Repositorios\\TourRepository.cs",
+              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\TourRepository.cs",
+              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Repositorios\\TourRepository.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAmwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T05:05:44.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "TransporteRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\TransporteRepository.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Repositorios\\TransporteRepository.cs",
@@ -485,12 +555,11 @@
               "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Repositorios\\TransporteRepository.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAYwF8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T05:15:52.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T05:15:52.58Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "ITransporteRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Interfaces\\ITransporteRepository.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Interfaces\\ITransporteRepository.cs",
@@ -498,12 +567,11 @@
               "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Interfaces\\ITransporteRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T05:15:29.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T05:15:29.593Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "IImagenRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Interfaces\\IImagenRepository.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Interfaces\\IImagenRepository.cs",
@@ -511,12 +579,11 @@
               "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Interfaces\\IImagenRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T04:27:55.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T04:27:55.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "IUsuarioRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Interfaces\\IUsuarioRepository.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Interfaces\\IUsuarioRepository.cs",
@@ -528,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "TransporteReadDto.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\TransporteDto\\TransporteReadDto.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\TransporteDto\\TransporteReadDto.cs",
@@ -536,12 +603,11 @@
               "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Dtos\\TransporteDto\\TransporteReadDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T05:15:09.959Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T05:15:09.959Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "Transporte.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\Transporte.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Models\\Transporte.cs",
@@ -549,24 +615,11 @@
               "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Models\\Transporte.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T04:25:14.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T04:25:14.843Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PaqueteController.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\PaqueteController.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Controllers\\PaqueteController.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\PaqueteController.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Controllers\\PaqueteController.cs",
-              "ViewState": "AgIAANQAAAAAAAAAAAAqwOkAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T06:03:05.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "TransporteCreateDto.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\TransporteDto\\TransporteCreateDto.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\TransporteDto\\TransporteCreateDto.cs",
@@ -578,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Controllers\\UsuarioController.cs",
@@ -590,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "ProyTour_Transporte_Hospedaje.csproj",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje.csproj",
@@ -602,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\appsettings.json",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\appsettings.json",
@@ -614,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\WeatherForecast.cs",
@@ -626,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "Ventum.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\Ventum.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Models\\Ventum.cs",
@@ -638,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "VentaRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\VentaRepository.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Repositorios\\VentaRepository.cs",
@@ -650,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Program.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Program.cs",
@@ -662,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "UsuarioCreateDto.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\Logeo\\UsuarioCreateDto.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\Logeo\\UsuarioCreateDto.cs",
@@ -674,7 +727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "ViajeTourContext.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\ViajeTourContext.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Models\\ViajeTourContext.cs",
@@ -686,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Controllers\\WeatherForecastController.cs",
@@ -698,7 +751,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\Logeo\\LoginDto.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\Logeo\\LoginDto.cs",
@@ -710,7 +763,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "Usuario.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Models\\Usuario.cs",
@@ -722,7 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 40,
               "Title": "ServicioReadDto.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\ServicioReadDto.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\ServicioReadDto.cs",
@@ -734,7 +787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Properties\\launchSettings.json",
@@ -746,7 +799,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 36,
               "Title": "LoginResponseDto.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\Logeo\\LoginResponseDto.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\Logeo\\LoginResponseDto.cs",
@@ -758,7 +811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "TokenService.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Services\\TokenService.cs",
@@ -770,7 +823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "UsuarioRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Repositorios\\UsuarioRepository.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Repositorios\\UsuarioRepository.cs",
@@ -782,19 +835,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "PaqueteDetalleReadDto.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteDetalleReadDto.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteDetalleReadDto.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteDetalleReadDto.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteDetalleReadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T05:46:18.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 42,
               "Title": "ImagenReadDto.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\ImagenDto\\ImagenReadDto.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\ImagenDto\\ImagenReadDto.cs",
@@ -806,7 +847,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\appsettings.Development.json",
@@ -818,19 +859,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "PaqueteServicioDto.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteServicioDto.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteServicioDto.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteServicioDto.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\Detalle\\PaqueteServicioDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T05:49:16.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "PaqueteUpdateDto.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteUpdateDto.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteUpdateDto.cs",
@@ -842,19 +871,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "PaqueteReadDto.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteReadDto.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteReadDto.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteReadDto.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteReadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T05:45:25.485Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "PaqueteCreateDto.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteCreateDto.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteCreateDto.cs",
@@ -863,18 +880,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T05:45:54.701Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "PaqueteBasicDto.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteBasicDto.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteBasicDto.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteBasicDto.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Dtos\\PaqueteDto\\PaqueteBasicDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T05:47:24.176Z"
             },
             {
               "$type": "Document",
@@ -891,18 +896,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 45,
-              "Title": "VentaController.cs",
-              "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\VentaController.cs",
-              "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Controllers\\VentaController.cs",
-              "ToolTip": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Controllers\\VentaController.cs",
-              "RelativeToolTip": "ProyTour_Transporte_Hospedaje\\Controllers\\VentaController.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAqwI0AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T20:36:15.41Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
               "Title": "IVentaRepository.cs",
               "DocumentMoniker": "D:\\Descargas\\Proyect_Full_Stack\\backend\\Tour_Viajes_Hospe\\SlnTour_Transporte_Hospedaje\\ProyTour_Transporte_Hospedaje\\Interfaces\\IVentaRepository.cs",
               "RelativeDocumentMoniker": "ProyTour_Transporte_Hospedaje\\Interfaces\\IVentaRepository.cs",

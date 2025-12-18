@@ -15,6 +15,11 @@ import ToursPage from '../pages/Tours/ToursPage';
 import TransportePage from '../pages/Transporte/TransportePage';
 import HospedajePage from '../pages/Hospedaje/HospedajePage'; 
 import PaquetePage from '../pages/Paquetes/PaquetePage';
+import PaqueteDetailPage from '../pages/Paquetes/PaqueteDetailPage';
+
+import CartPage from '../pages/Carrito/CartPage';
+import CheckoutPage from '../pages/Carrito/CheckoutPage';
+
 export default function AppRouter() {
   return (
     <BrowserRouter>
@@ -27,6 +32,9 @@ export default function AppRouter() {
         <Route path="/tours" element={<ToursPage />} />
         <Route path="/transportes" element={<TransportePage />} />
          <Route path="/hospedajes" element={<HospedajePage />} />
+         <Route path="/paquetes/:id" element={<PaqueteDetailPage />} />
+         <Route path="/cart" element={<CartPage />} />
+<Route path="/checkout" element={<CheckoutPage />} />
         {/* ================= ADMIN ================= */}
         <Route
           path="/admin"

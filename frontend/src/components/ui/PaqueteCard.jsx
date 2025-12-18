@@ -1,6 +1,8 @@
 export default function PaqueteCard({ paquete, onClick }) {
-  // Imagen por defecto para paquetes
-  const imageUrl = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=500';
+  // ✅ Usar la primera imagen del paquete o fallback
+  const imageUrl = paquete.imagenes && paquete.imagenes.length > 0
+    ? paquete.imagenes[0].url
+    : 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=500';
 
   return (
     <div 
@@ -43,7 +45,15 @@ export default function PaqueteCard({ paquete, onClick }) {
             <span style={styles.priceLabel}>Precio total</span>
             <span style={styles.priceValue}>S/ {paquete.precioTotal}</span>
           </div>
-          <button style={styles.detailBtn}>Ver detalles</button>
+          <button 
+            style={styles.detailBtn}
+            onClick={(e) => {
+              e.stopPropagation(); // Evita doble click
+              onClick();
+            }}
+          >
+            Ver detalles
+          </button>
         </div>
       </div>
     </div>

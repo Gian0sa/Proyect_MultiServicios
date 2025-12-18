@@ -1,4 +1,5 @@
-﻿using ProyTour_Transporte_Hospedaje.Dtos.PaqueteDto.Detalle;
+﻿using ProyTour_Transporte_Hospedaje.Dtos.ImagenDto;
+using ProyTour_Transporte_Hospedaje.Dtos.PaqueteDto.Detalle;
 
 namespace ProyTour_Transporte_Hospedaje.Dtos.PaqueteDto
 {
@@ -12,5 +13,7 @@ namespace ProyTour_Transporte_Hospedaje.Dtos.PaqueteDto
 
         // Lista de servicios que contiene este paquete (cada servicio ya incluye sus imágenes)
         public List<PaqueteDetalleReadDto> Servicios { get; set; } = new();
+        public List<ImagenReadDto> Imagenes { get; set; } = new();
+
     }
 }

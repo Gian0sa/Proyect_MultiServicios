@@ -107,7 +107,6 @@ namespace ProyTour_Transporte_Hospedaje.Controllers
         // GET: /api/Venta/{id} (Obtener detalles de una venta específica)
         // ==========================================================
         [HttpGet("{id}")]
-        [Authorize(Roles = "ADMIN")]
         public async Task<ActionResult<VentaReadDto>> GetVenta(int id)
         {
             var ventaDb = await _repositorio.ObtenerPorIdAsync(id);

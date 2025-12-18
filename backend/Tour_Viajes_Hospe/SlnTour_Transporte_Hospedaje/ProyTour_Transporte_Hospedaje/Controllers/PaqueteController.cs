@@ -71,6 +71,9 @@ namespace ProyTour_Transporte_Hospedaje.Controllers
                 serviciosDto.Add(servicioDto);
             }
 
+            // ✅ AGREGAR ESTA LÍNEA: Obtener imágenes del PAQUETE
+            var imagenesPaquete = await _imagenRepositorio.ObtenerPorEntidadAsync("PAQUETE", paqueteConDetalles.IdPaquete);
+
             return new PaqueteReadDto
             {
                 IdPaquete = paqueteConDetalles.IdPaquete,
@@ -78,7 +81,8 @@ namespace ProyTour_Transporte_Hospedaje.Controllers
                 Descripcion = paqueteConDetalles.Descripcion,
                 PrecioTotal = paqueteConDetalles.PrecioTotal,
                 EsPromocion = (bool)paqueteConDetalles.EsPromocion!,
-                Servicios = serviciosDto
+                Servicios = serviciosDto,
+                Imagenes = imagenesPaquete.ToList() // ✅ AGREGAR ESTA LÍNEA
             };
         }
 
@@ -95,7 +99,17 @@ namespace ProyTour_Transporte_Hospedaje.Controllers
             {
                 return NotFound("No se encontraron paquetes.");
             }
-            return Ok(paquetesDto);
+
+            // ✅ AGREGAR: Cargar imágenes para cada paquete
+            var paquetesConImagenes = new List<PaqueteReadDto>();
+            foreach (var paquete in paquetesDto)
+            {
+                var imagenes = await _imagenRepositorio.ObtenerPorEntidadAsync("PAQUETE", paquete.IdPaquete);
+                paquete.Imagenes = imagenes.ToList();
+                paquetesConImagenes.Add(paquete);
+            }
+
+            return Ok(paquetesConImagenes);
         }
 
 

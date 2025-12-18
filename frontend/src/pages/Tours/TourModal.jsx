@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { tourService } from '../../api/tourService';
+import { useCart } from '../Carrito/CartContext';
 
 export default function TourModal({ tour: tourSimple, onClose, onAdd }) {
   const [tourFull, setTourFull] = useState(null);
@@ -23,7 +24,7 @@ export default function TourModal({ tour: tourSimple, onClose, onAdd }) {
       setLoading(false);
     }
   };
-
+const { addItem } = useCart();
   if (!tourSimple) return null;
 
   const t = tourFull || tourSimple;
@@ -100,13 +101,9 @@ export default function TourModal({ tour: tourSimple, onClose, onAdd }) {
             <button 
               style={styles.addBtn} 
               onClick={() => {
-                if (onAdd) {
-                  onAdd(t);
-                } else {
-                  console.log('Tour seleccionado para carrito:', t);
-                  alert('Tour añadido al carrito (función pendiente)');
-                }
-                onClose();
+  addItem(t, 'TOUR');
+  alert('Tour añadido al carrito');
+  onClose();
               }}
             >
               Añadir al carrito

@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { useAuth } from '../../auth/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
+import { useCart } from '../../pages/Carrito/CartContext';
 export default function Header() {
   const { user, logout } = useAuth();
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
-
+const { itemCount } = useCart();
   return (
     <header style={styles.header}>
       <div style={styles.logo} onClick={() => navigate('/')}>
@@ -22,7 +22,15 @@ export default function Header() {
   <Link to="/transportes" style={styles.navLink}>Transporte</Link>
   <Link to="/tours" style={styles.navLink}>Tours</Link>
 </nav>
-
+<div 
+  onClick={() => navigate('/cart')} 
+  style={styles.cartIcon}
+>
+  🛒
+  {itemCount > 0 && (
+    <span style={styles.cartBadge}>{itemCount}</span>
+  )}
+</div>
 
       <div style={styles.userBox}>
         {!user ? (
@@ -194,4 +202,25 @@ const styles = {
     cursor: 'pointer',
     transition: 'background 0.2s',
   },
+  cartIcon: {
+  position: 'relative',
+  fontSize: '1.5rem',
+  cursor: 'pointer',
+  marginRight: '1.5rem'
+},
+cartBadge: {
+  position: 'absolute',
+  top: '-5px',
+  right: '-10px',
+  background: '#ef4444',
+  color: '#fff',
+  borderRadius: '50%',
+  width: '20px',
+  height: '20px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  fontSize: '0.7rem',
+  fontWeight: '700'
+}
 };

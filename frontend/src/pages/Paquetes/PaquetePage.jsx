@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // ✅ Agregar
 import { paqueteService } from '../../api/paqueteService';
 import PaqueteCard from '../../components/ui/PaqueteCard';
-import PaqueteDetailModal from './PaqueteDetailModal';
 import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
 
 export default function PaquetePage() {
+  const navigate = useNavigate(); // ✅ Agregar
   const [paquetes, setPaquetes] = useState([]);
-  const [paqueteActivo, setPaqueteActivo] = useState(null);
 
   useEffect(() => {
     paqueteService.getAll()
@@ -33,7 +33,7 @@ export default function PaquetePage() {
             <PaqueteCard
               key={p.idPaquete}
               paquete={p}
-              onClick={() => setPaqueteActivo(p)}
+              onClick={() => navigate(`/paquetes/${p.idPaquete}`)} // ✅ CAMBIAR ESTO
             />
           ))}
         </div>
@@ -45,13 +45,6 @@ export default function PaquetePage() {
           </div>
         )}
       </section>
-
-      {/* MODAL */}
-      <PaqueteDetailModal
-        paquete={paqueteActivo}
-        onClose={() => setPaqueteActivo(null)}
-        onAdd={(item) => console.log('Añadido al carrito:', item)}
-      />
 
       <Footer />
     </>

@@ -1978,6 +1978,13 @@
               "$ref": "#/components/schemas/PaqueteDetalleReadDto"
             },
             "nullable": true
+          },
+          "imagenes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImagenReadDto"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
