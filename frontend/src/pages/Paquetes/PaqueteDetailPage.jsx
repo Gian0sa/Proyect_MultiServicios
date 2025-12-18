@@ -3,10 +3,13 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { paqueteService } from '../../api/paqueteService';
 import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
+import { useCart } from '../Carrito/CartContext';
 
 export default function PaqueteDetailPage() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { addItem } = useCart();
+
   const [paquete, setPaquete] = useState(null);
   const [loading, setLoading] = useState(true);
   const [imagenActiva, setImagenActiva] = useState(0);
@@ -19,7 +22,6 @@ export default function PaqueteDetailPage() {
     try {
       setLoading(true);
       const res = await paqueteService.getById(id);
-      console.log('Paquete completo:', res.data);
       setPaquete(res.data);
     } catch (error) {
       console.error("Error al cargar paquete:", error);
@@ -29,12 +31,18 @@ export default function PaqueteDetailPage() {
   };
 
   const getIconoServicio = (tipo) => {
-    switch(tipo) {
+    switch (tipo) {
       case 'TOUR': return '🌄';
       case 'TRANSPORTE': return '🚌';
       case 'HOSPEDAJE': return '🏨';
       default: return '📦';
     }
+  };
+
+  // ✅ MISMA LÓGICA QUE TODO LO DEMÁS
+  const handleReservarPaquete = () => {
+    addItem(paquete, 'PAQUETE');
+    onClose();              
   };
 
   if (loading) {
@@ -68,12 +76,12 @@ export default function PaqueteDetailPage() {
       <div style={{ height: 70 }} />
 
       <div style={styles.container}>
-        {/* Galería de imágenes grande */}
+        {/* GALERÍA */}
         <section style={styles.gallerySection}>
           <div style={styles.mainImage}>
-            {paquete.imagenes && paquete.imagenes.length > 0 ? (
-              <img 
-                src={paquete.imagenes[imagenActiva].url} 
+            {paquete.imagenes?.length > 0 ? (
+              <img
+                src={paquete.imagenes[imagenActiva].url}
                 alt={paquete.nombre}
                 style={styles.imageMain}
               />
@@ -82,16 +90,17 @@ export default function PaqueteDetailPage() {
             )}
           </div>
 
-          {paquete.imagenes && paquete.imagenes.length > 1 && (
+          {paquete.imagenes?.length > 1 && (
             <div style={styles.thumbnails}>
               {paquete.imagenes.map((img, index) => (
                 <img
                   key={index}
                   src={img.url}
-                  alt={`Vista ${index + 1}`}
                   style={{
                     ...styles.thumbnail,
-                    border: imagenActiva === index ? '3px solid #667eea' : '3px solid transparent'
+                    border: imagenActiva === index
+                      ? '3px solid #667eea'
+                      : '3px solid transparent'
                   }}
                   onClick={() => setImagenActiva(index)}
                 />
@@ -100,95 +109,83 @@ export default function PaqueteDetailPage() {
           )}
         </section>
 
-        {/* Información principal */}
+        {/* INFO */}
         <section style={styles.mainInfo}>
           <div style={styles.headerSection}>
             <div>
               <h1 style={styles.title}>{paquete.nombre}</h1>
               <p style={styles.description}>{paquete.descripcion}</p>
             </div>
+
             {paquete.esPromocion && (
-              <div style={styles.promoBadge}>
-                🔥 PROMOCIÓN ESPECIAL
-              </div>
+              <div style={styles.promoBadge}>🔥 PROMOCIÓN</div>
             )}
           </div>
 
           <div style={styles.priceBox}>
-            <div style={styles.priceInfo}>
-              <span style={styles.priceLabel}>Precio total del paquete</span>
+            <div>
+              <span style={styles.priceLabel}>Precio total</span>
               <span style={styles.priceValue}>S/ {paquete.precioTotal}</span>
             </div>
-            <button 
+
+            <button
               style={styles.reserveBtn}
-              onClick={() => {
-                console.log('Reservar paquete:', paquete);
-                alert('Paquete añadido al carrito (función pendiente)');
-              }}
+              onClick={handleReservarPaquete}
             >
               RESERVAR AHORA
             </button>
           </div>
         </section>
 
-        {/* Servicios incluidos */}
+        {/* SERVICIOS */}
         <section style={styles.servicesSection}>
-          <h2 style={styles.sectionTitle}>📦 Servicios Incluidos en este Paquete</h2>
-          
-          {paquete.servicios && paquete.servicios.length > 0 ? (
-            <div style={styles.servicesList}>
-              {paquete.servicios.map((servicio, index) => (
-                <div key={index} style={styles.serviceCard}>
-                  <div style={styles.serviceHeader}>
-                    <div style={styles.serviceTitleBox}>
-                      <span style={styles.serviceIcon}>
-                        {getIconoServicio(servicio.tipoServicio)}
+          <h2 style={styles.sectionTitle}>📦 Servicios incluidos</h2>
+
+          <div style={styles.servicesList}>
+            {paquete.servicios?.map((servicio, index) => (
+              <div key={index} style={styles.serviceCard}>
+                <div style={styles.serviceHeader}>
+                  <div style={styles.serviceTitleBox}>
+                    <span style={styles.serviceIcon}>
+                      {getIconoServicio(servicio.tipoServicio)}
+                    </span>
+                    <div>
+                      <span style={styles.serviceType}>
+                        {servicio.tipoServicio}
                       </span>
-                      <div>
-                        <span style={styles.serviceType}>{servicio.tipoServicio}</span>
-                        <h3 style={styles.serviceName}>{servicio.nombreServicio}</h3>
-                      </div>
+                      <h3 style={styles.serviceName}>
+                        {servicio.nombreServicio}
+                      </h3>
                     </div>
-                    <span style={styles.servicePrice}>S/ {servicio.precioBase}</span>
                   </div>
-
-                  {/* Mini galería de imágenes del servicio */}
-                  {servicio.imagenes && servicio.imagenes.length > 0 && (
-                    <div style={styles.serviceImages}>
-                      {servicio.imagenes.slice(0, 3).map((img, imgIndex) => (
-                        <img
-                          key={imgIndex}
-                          src={img.url}
-                          alt={`${servicio.nombreServicio} ${imgIndex + 1}`}
-                          style={styles.serviceImage}
-                        />
-                      ))}
-                    </div>
-                  )}
+                  <span style={styles.servicePrice}>
+                    S/ {servicio.precioBase}
+                  </span>
                 </div>
-              ))}
-            </div>
-          ) : (
-            <p style={styles.noServices}>No hay servicios configurados</p>
-          )}
 
-          {paquete.esPromocion && (
-            <div style={styles.savingsBox}>
-              💰 ¡Ahorra comprando el paquete completo en lugar de servicios individuales!
-            </div>
-          )}
+                {servicio.imagenes?.length > 0 && (
+                  <div style={styles.serviceImages}>
+                    {servicio.imagenes.slice(0, 3).map((img, i) => (
+                      <img
+                        key={i}
+                        src={img.url}
+                        style={styles.serviceImage}
+                      />
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </section>
 
-        {/* Botón fijo inferior en móvil */}
+        {/* BOTÓN MÓVIL */}
         <div style={styles.floatingBtn}>
-          <button 
+          <button
             style={styles.reserveBtnMobile}
-            onClick={() => {
-              console.log('Reservar paquete:', paquete);
-              alert('Paquete añadido al carrito (función pendiente)');
-            }}
+            onClick={handleReservarPaquete}
           >
-            RESERVAR - S/ {paquete.precioTotal}
+            RESERVAR – S/ {paquete.precioTotal}
           </button>
         </div>
       </div>

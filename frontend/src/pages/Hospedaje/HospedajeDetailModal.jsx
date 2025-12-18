@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { hospedajeService } from '../../api/hospedajeService';
+import { useCart } from '../Carrito/CartContext';
 
-export default function HospedajeDetailModal({ hospedaje: hospedajeSimple, onClose, onAdd }) {
+export default function HospedajeDetailModal({ hospedaje: hospedajeSimple, onClose }) {
+  const { addItem } = useCart(); 
   const [hospedajeFull, setHospedajeFull] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -15,10 +17,9 @@ export default function HospedajeDetailModal({ hospedaje: hospedajeSimple, onClo
     try {
       setLoading(true);
       const res = await hospedajeService.getById(hospedajeSimple.idHospedaje);
-      console.log('Respuesta API Hospedaje:', res.data);
       setHospedajeFull(res.data);
     } catch (error) {
-      console.error("Error al cargar detalles del hospedaje:", error);
+      console.error('Error al cargar detalles del hospedaje:', error);
     } finally {
       setLoading(false);
     }
@@ -28,18 +29,25 @@ export default function HospedajeDetailModal({ hospedaje: hospedajeSimple, onClo
 
   const h = hospedajeFull || hospedajeSimple;
 
+  const handleAddToCart = () => {
+    addItem(h, 'HOSPEDAJE'); 
+    onClose();              
+  };
+
   return (
     <div style={styles.overlay} onClick={onClose}>
-      <div style={styles.modal} onClick={(e) => e.stopPropagation()}>
+      <div style={styles.modal} onClick={e => e.stopPropagation()}>
         <button style={styles.close} onClick={onClose}>✕</button>
 
         {loading ? (
-          <p style={{ textAlign: 'center', padding: '2rem' }}>Cargando detalles...</p>
+          <p style={{ textAlign: 'center', padding: '2rem' }}>
+            Cargando detalles...
+          </p>
         ) : (
           <>
-            {/* Galería de imágenes */}
+            {/* IMÁGENES */}
             <div style={styles.images}>
-              {(h.imagenes && h.imagenes.length > 0) ? (
+              {h.imagenes?.length > 0 ? (
                 h.imagenes.slice(0, 2).map((img, i) => (
                   <img key={i} src={img.url} style={styles.image} alt="Hospedaje" />
                 ))
@@ -48,24 +56,27 @@ export default function HospedajeDetailModal({ hospedaje: hospedajeSimple, onClo
               )}
             </div>
 
-            {/* Header con título y badge de rango */}
+            {/* HEADER */}
             <div style={styles.header}>
               <h2 style={styles.title}>{h.nombre}</h2>
-              <span style={{
-                ...styles.rangoBadge,
-                background: h.rangoPrecio === 'VIP' 
-                  ? 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)'
-                  : h.rangoPrecio === 'Premium'
-                  ? 'linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%)'
-                  : 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)'
-              }}>
+              <span
+                style={{
+                  ...styles.rangoBadge,
+                  background:
+                    h.rangoPrecio === 'VIP'
+                      ? 'linear-gradient(135deg, #f59e0b, #d97706)'
+                      : h.rangoPrecio === 'Premium'
+                      ? 'linear-gradient(135deg, #8b5cf6, #6d28d9)'
+                      : 'linear-gradient(135deg, #3b82f6, #2563eb)'
+                }}
+              >
                 {h.rangoPrecio}
               </span>
             </div>
 
             <p style={styles.description}>{h.descripcion}</p>
 
-            {/* Detalles en grid */}
+            {/* DETALLES */}
             <div style={styles.detailsGrid}>
               <div style={styles.detailRow}>
                 <span style={styles.label}>📍 Ubicación</span>
@@ -77,11 +88,6 @@ export default function HospedajeDetailModal({ hospedaje: hospedajeSimple, onClo
               <div style={styles.detailRow}>
                 <span style={styles.label}>👥 Capacidad</span>
                 <span style={styles.value}>{h.capacidad} personas</span>
-              </div>
-
-              <div style={styles.detailRow}>
-                <span style={styles.label}>💎 Rango de precio</span>
-                <span style={styles.value}>{h.rangoPrecio}</span>
               </div>
 
               {h.serviciosIncluidos && (
@@ -97,19 +103,8 @@ export default function HospedajeDetailModal({ hospedaje: hospedajeSimple, onClo
               </div>
             </div>
 
-            {/* Botón de reserva */}
-            <button 
-              style={styles.addBtn} 
-              onClick={() => {
-                if (onAdd) {
-                  onAdd(h);
-                } else {
-                  console.log('Hospedaje para carrito:', h);
-                  alert('Hospedaje añadido al carrito (función pendiente)');
-                }
-                onClose();
-              }}
-            >
+            {/* BOTÓN */}
+            <button style={styles.addBtn} onClick={handleAddToCart}>
               Añadir al carrito
             </button>
           </>
@@ -119,15 +114,16 @@ export default function HospedajeDetailModal({ hospedaje: hospedajeSimple, onClo
   );
 }
 
+/* ================== STYLES ================== */
+
 const styles = {
   overlay: {
     position: 'fixed',
     inset: 0,
     background: 'rgba(0,0,0,0.7)',
-    backdropFilter: 'blur(4px)',
     display: 'flex',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
     zIndex: 1000
   },
   modal: {
@@ -138,8 +134,7 @@ const styles = {
     overflowY: 'auto',
     borderRadius: '20px',
     padding: '2rem',
-    position: 'relative',
-    boxShadow: '0 20px 25px -5px rgba(0,0,0,0.2)'
+    position: 'relative'
   },
   close: {
     position: 'absolute',
@@ -150,27 +145,19 @@ const styles = {
     width: '32px',
     height: '32px',
     borderRadius: '50%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    cursor: 'pointer',
-    fontSize: '1.2rem',
-    color: '#64748b',
-    transition: 'background 0.2s',
-    zIndex: 10
+    cursor: 'pointer'
   },
   images: {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
     gap: '12px',
-    marginBottom: '1.5rem'
+    marginBottom: '1rem'
   },
   image: {
     width: '100%',
     height: '180px',
     objectFit: 'cover',
-    borderRadius: '12px',
-    background: '#f1f5f9'
+    borderRadius: '12px'
   },
   noImage: {
     gridColumn: 'span 2',
@@ -179,94 +166,62 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     background: '#f1f5f9',
-    borderRadius: '12px',
-    color: '#64748b',
-    fontSize: '0.9rem'
+    borderRadius: '12px'
   },
   header: {
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: '0.8rem',
-    gap: '1rem'
+    alignItems: 'center'
   },
   title: {
-    margin: 0,
-    fontSize: '1.5rem',
-    fontWeight: '700',
-    color: '#1e293b',
-    flex: 1
+    fontSize: '1.4rem',
+    fontWeight: 700
   },
   rangoBadge: {
     color: '#fff',
-    padding: '6px 14px',
+    padding: '6px 12px',
     borderRadius: '20px',
     fontSize: '0.75rem',
-    fontWeight: '700',
-    textTransform: 'uppercase',
-    letterSpacing: '0.5px',
-    boxShadow: '0 4px 10px rgba(0,0,0,0.15)',
-    whiteSpace: 'nowrap'
+    fontWeight: 700
   },
   description: {
-    color: '#64748b',
-    fontSize: '0.95rem',
-    lineHeight: '1.6',
-    marginBottom: '1.5rem'
+    margin: '1rem 0',
+    color: '#64748b'
   },
   detailsGrid: {
     background: '#f8fafc',
-    padding: '1.2rem',
-    borderRadius: '12px',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '0.8rem'
+    padding: '1rem',
+    borderRadius: '12px'
   },
   detailRow: {
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingBottom: '0.8rem',
-    borderBottom: '1px solid #e2e8f0'
+    marginBottom: '0.6rem'
   },
   detailRowFull: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '0.4rem',
-    paddingBottom: '0.8rem',
-    borderBottom: '1px solid #e2e8f0'
+    marginBottom: '0.6rem'
   },
   label: {
-    fontSize: '0.85rem',
-    color: '#64748b',
-    fontWeight: '600'
+    fontWeight: 600,
+    color: '#64748b'
   },
   value: {
-    fontSize: '0.9rem',
-    color: '#1e293b',
-    fontWeight: '600',
-    textAlign: 'right'
+    fontWeight: 600
   },
   valueServices: {
-    fontSize: '0.85rem',
-    color: '#475569',
-    lineHeight: '1.5',
-    fontWeight: '500'
+    fontSize: '0.85rem'
   },
   priceRow: {
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingTop: '0.5rem'
+    marginTop: '0.6rem'
   },
   priceLabel: {
-    fontSize: '0.9rem',
-    color: '#64748b',
-    fontWeight: '600'
+    fontWeight: 600
   },
   priceValue: {
-    fontSize: '1.4rem',
-    fontWeight: '800',
+    fontSize: '1.3rem',
+    fontWeight: 800,
     color: '#b84040'
   },
   addBtn: {
@@ -277,10 +232,7 @@ const styles = {
     border: 'none',
     background: '#1e293b',
     color: '#fff',
-    fontWeight: '600',
     fontSize: '1rem',
-    cursor: 'pointer',
-    transition: 'all 0.2s',
-    boxShadow: '0 4px 6px rgba(30, 41, 59, 0.2)'
+    cursor: 'pointer'
   }
 };

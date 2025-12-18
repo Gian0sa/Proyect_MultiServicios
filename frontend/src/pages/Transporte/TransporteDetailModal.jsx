@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import { transporteService } from '../../api/transporteService';
+import { useCart } from '../Carrito/CartContext';
 
-export default function TransporteDetailModal({ transporte: transporteSimple, onClose, onAdd }) {
+export default function TransporteDetailModal({ transporte: transporteSimple, onClose }) {
   const [transporteFull, setTransporteFull] = useState(null);
   const [loading, setLoading] = useState(true);
+  const { addItem } = useCart();
 
   useEffect(() => {
     if (transporteSimple?.idTransporte) {
@@ -15,10 +17,9 @@ export default function TransporteDetailModal({ transporte: transporteSimple, on
     try {
       setLoading(true);
       const res = await transporteService.getById(transporteSimple.idTransporte);
-      console.log('Respuesta API Transporte:', res.data);
       setTransporteFull(res.data);
     } catch (error) {
-      console.error("Error al cargar detalles del transporte:", error);
+      console.error('Error al cargar transporte', error);
     } finally {
       setLoading(false);
     }
@@ -28,7 +29,12 @@ export default function TransporteDetailModal({ transporte: transporteSimple, on
 
   const t = transporteFull || transporteSimple;
 
-  // Formatear fechas
+  
+  const handleAddToCart = () => {
+    addItem(t, 'TRANSPORTE'); 
+    onClose();              
+  };
+
   const formatFecha = (fecha) => {
     if (!fecha) return 'No especificado';
     const date = new Date(fecha);
@@ -50,9 +56,9 @@ export default function TransporteDetailModal({ transporte: transporteSimple, on
           <p style={{ textAlign: 'center', padding: '2rem' }}>Cargando detalles...</p>
         ) : (
           <>
-            {/* Galería de imágenes */}
+            {/* IMÁGENES */}
             <div style={styles.images}>
-              {(t.imagenes && t.imagenes.length > 0) ? (
+              {t.imagenes?.length > 0 ? (
                 t.imagenes.slice(0, 2).map((img, i) => (
                   <img key={i} src={img.url} style={styles.image} alt="Transporte" />
                 ))
@@ -61,73 +67,41 @@ export default function TransporteDetailModal({ transporte: transporteSimple, on
               )}
             </div>
 
-            {/* Header con título y badge de categoría */}
             <div style={styles.header}>
               <h2 style={styles.title}>{t.nombre}</h2>
-              <span style={{
-                ...styles.categoriaBadge,
-                background: t.categoria === 'VIP' 
-                  ? 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)'
-                  : t.categoria === 'PREMIUM'
-                  ? 'linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%)'
-                  : 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)'
-              }}>
-                {t.categoria}
-              </span>
+              <span style={styles.categoriaBadge}>{t.categoria}</span>
             </div>
 
             <p style={styles.description}>{t.descripcion}</p>
 
-            {/* Detalles en grid */}
             <div style={styles.detailsGrid}>
               <div style={styles.detailRow}>
-                <span style={styles.label}>🚩 Origen</span>
-                <span style={styles.value}>
-                  {t.nombreOrigen}, {t.nombreDepartamentoOrigen}
-                </span>
+                <span>🚩 Origen</span>
+                <span>{t.nombreOrigen}</span>
               </div>
 
               <div style={styles.detailRow}>
-                <span style={styles.label}>🏁 Destino</span>
-                <span style={styles.value}>
-                  {t.nombreDestino}, {t.nombreDepartamentoDestino}
-                </span>
+                <span>🏁 Destino</span>
+                <span>{t.nombreDestino}</span>
               </div>
 
               <div style={styles.detailRow}>
-                <span style={styles.label}>📅 Salida</span>
-                <span style={styles.value}>{formatFecha(t.fechaSalida)}</span>
+                <span>📅 Salida</span>
+                <span>{formatFecha(t.fechaSalida)}</span>
               </div>
 
               <div style={styles.detailRow}>
-                <span style={styles.label}>🕐 Llegada</span>
-                <span style={styles.value}>{formatFecha(t.fechaLlegada)}</span>
-              </div>
-
-              <div style={styles.detailRow}>
-                <span style={styles.label}>🎫 Categoría</span>
-                <span style={styles.value}>{t.categoria}</span>
+                <span>🕐 Llegada</span>
+                <span>{formatFecha(t.fechaLlegada)}</span>
               </div>
 
               <div style={styles.priceRow}>
-                <span style={styles.priceLabel}>Precio por persona</span>
-                <span style={styles.priceValue}>S/ {t.precioBase}</span>
+                <span>Precio por persona</span>
+                <strong>S/ {t.precioBase}</strong>
               </div>
             </div>
 
-            {/* Botón de acción */}
-            <button 
-              style={styles.addBtn} 
-              onClick={() => {
-                if (onAdd) {
-                  onAdd(t);
-                } else {
-                  console.log('Transporte para carrito:', t);
-                  alert('Transporte añadido al carrito (función pendiente)');
-                }
-                onClose();
-              }}
-            >
+            <button style={styles.addBtn} onClick={handleAddToCart}>
               Añadir al carrito
             </button>
           </>
@@ -136,7 +110,6 @@ export default function TransporteDetailModal({ transporte: transporteSimple, on
     </div>
   );
 }
-
 const styles = {
   overlay: {
     position: 'fixed',

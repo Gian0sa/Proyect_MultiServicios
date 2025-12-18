@@ -99,6 +99,7 @@ builder.Services.AddScoped<IServicioRepository, ServicioRepository>();
 builder.Services.AddScoped<IPaqueteRepository, PaqueteRepository>();
 builder.Services.AddScoped<IVentaRepository, VentaRepository>();
 builder.Services.AddScoped<IImagenRepository, ImagenRepository>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
