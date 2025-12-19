@@ -26,7 +26,7 @@ import PaqueteDetailPage from '../pages/Paquetes/PaqueteDetailPage';
 
 import CartPage from '../pages/Carrito/CartPage';
 import CheckoutPage from '../pages/Carrito/CheckoutPage';
-
+import HistorialCompras from '../pages/Cliente/HistorialCompras';
 export default function AppRouter() {
   return (
     <BrowserRouter>
@@ -38,10 +38,11 @@ export default function AppRouter() {
         <Route path="/paquetes" element={<PaquetePage />} />
         <Route path="/tours" element={<ToursPage />} />
         <Route path="/transportes" element={<TransportePage />} />
-         <Route path="/hospedajes" element={<HospedajePage />} />
-         <Route path="/paquetes/:id" element={<PaqueteDetailPage />} />
-         <Route path="/cart" element={<CartPage />} />
-<Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/hospedajes" element={<HospedajePage />} />
+        <Route path="/paquetes/:id" element={<PaqueteDetailPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/mis-compras" element={<HistorialCompras />} />
         {/* ================= ADMIN ================= */}
         <Route
           path="/admin"
