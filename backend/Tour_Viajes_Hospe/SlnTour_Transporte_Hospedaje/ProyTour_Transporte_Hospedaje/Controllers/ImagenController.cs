@@ -140,6 +140,42 @@ namespace ProyTour_Transporte_Hospedaje.Controllers
 
             return StatusCode(500, "Error al eliminar la imagen.");
         }
+        [HttpPut("{id}")]
+        [Authorize(Roles = "ADMIN")]
+        public async Task<IActionResult> PutImagen(int id, [FromBody] ImagenCreateDto imagenDto)
+        {
+            // 1. Buscar la imagen original en la base de datos
+            var imagenExistente = await _repositorio.ObtenerPorIdAsync(id);
+
+            if (imagenExistente == null)
+            {
+                return NotFound($"Imagen con ID {id} no encontrada.");
+            }
+
+            // 2. Validar el tipo de entidad antes de actualizar
+            var tipoUpper = imagenDto.TipoEntidad.ToUpper();
+            if (tipoUpper != "HOSPEDAJE" && tipoUpper != "TOUR" &&
+                tipoUpper != "TRANSPORTE" && tipoUpper != "PAQUETE")
+            {
+                return BadRequest("Tipo de entidad inválido. Use: HOSPEDAJE, TOUR, TRANSPORTE o PAQUETE");
+            }
+
+            // 3. Actualizar los valores del modelo con los datos del DTO
+            imagenExistente.TipoEntidad = tipoUpper;
+            imagenExistente.IdEntidad = imagenDto.IdEntidad;
+            imagenExistente.Url = imagenDto.Url;
+            imagenExistente.Descripcion = imagenDto.Descripcion;
+
+            // 4. Marcar como modificado y guardar
+            _repositorio.Actualizar(imagenExistente);
+
+            if (await _repositorio.GuardarCambiosAsync())
+            {
+                return NoContent(); // Retorna 204: Éxito sin contenido de respuesta
+            }
+
+            return StatusCode(500, "Error interno al intentar actualizar la imagen.");
+        }
     }
 }
 

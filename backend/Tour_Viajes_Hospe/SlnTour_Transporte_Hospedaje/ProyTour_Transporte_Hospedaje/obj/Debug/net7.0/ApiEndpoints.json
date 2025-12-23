@@ -270,6 +270,27 @@
   },
   {
     "ContainingType": "ProyTour_Transporte_Hospedaje.Controllers.ImagenController",
+    "Method": "PutImagen",
+    "RelativePath": "api/Imagen/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "imagenDto",
+        "Type": "ProyTour_Transporte_Hospedaje.Dtos.ImagenDto.ImagenCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyTour_Transporte_Hospedaje.Controllers.ImagenController",
     "Method": "GetImagenesPorEntidad",
     "RelativePath": "api/Imagen/{tipoEntidad}/{idEntidad}",
     "HttpMethod": "GET",

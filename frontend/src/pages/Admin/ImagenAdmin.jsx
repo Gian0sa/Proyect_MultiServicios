@@ -9,6 +9,7 @@ export default function ImagenAdmin() {
   const [imagenes, setImagenes] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [editId, setEditId] = useState(null); // ID de la imagen a editar
   const [form, setForm] = useState({
     url: '',
     descripcion: '',
@@ -33,7 +34,6 @@ export default function ImagenAdmin() {
       setImagenes(data || []);
     } catch (error) {
       console.error('Error al cargar imágenes', error);
-      // Si backend responde 404, simplemente consideramos lista vacía
       setImagenes([]);
     } finally {
       setLoading(false);
@@ -45,28 +45,40 @@ export default function ImagenAdmin() {
       alert('Primero selecciona el ID de la entidad.');
       return;
     }
+    setEditId(null);
+    setForm({ url: '', descripcion: '' });
+    setShowModal(true);
+  };
+
+  const handleOpenEdit = (img) => {
+    setEditId(img.idImagen);
     setForm({
-      url: '',
-      descripcion: '',
+      url: img.url,
+      descripcion: img.descripcion,
     });
     setShowModal(true);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const payload = {
+      tipoEntidad,
+      idEntidad: parseInt(idEntidad),
+      url: form.url,
+      descripcion: form.descripcion,
+    };
+
     try {
-      const payload = {
-        tipoEntidad,
-        idEntidad: parseInt(idEntidad),
-        url: form.url,
-        descripcion: form.descripcion,
-      };
-      await imagenService.create(payload);
+      if (editId) {
+        await imagenService.update(editId, payload);
+      } else {
+        await imagenService.create(payload);
+      }
       setShowModal(false);
       cargarImagenes();
     } catch (error) {
       console.error('Error al guardar imagen', error);
-      alert('Error al guardar imagen (revisa que la URL sea válida).');
+      alert('Error al procesar la solicitud.');
     }
   };
 
@@ -87,7 +99,7 @@ export default function ImagenAdmin() {
         <div style={styles.titleGroup}>
           <h2 style={styles.mainTitle}>🖼️ Gestión de Imágenes</h2>
           <p style={styles.subtitle}>
-            Asocia imágenes a hospedajes, tours, transportes y paquetes.
+            Asocia y edita imágenes de hospedajes, tours, transportes y paquetes.
           </p>
         </div>
 
@@ -105,9 +117,7 @@ export default function ImagenAdmin() {
             onChange={(e) => setTipoEntidad(e.target.value)}
           >
             {ENTIDADES.map((t) => (
-              <option key={t} value={t}>
-                {t}
-              </option>
+              <option key={t} value={t}>{t}</option>
             ))}
           </select>
         </div>
@@ -151,16 +161,22 @@ export default function ImagenAdmin() {
                     <span style={styles.idTag}>ID {img.idEntidad}</span>
                   </div>
                   <p style={styles.descText}>
-                    {img.descripcion || (
-                      <span style={styles.muted}>Sin descripción</span>
-                    )}
+                    {img.descripcion || <span style={styles.muted}>Sin descripción</span>}
                   </p>
-                  <button
-                    style={styles.deleteBtn}
-                    onClick={() => handleDelete(img.idImagen)}
-                  >
-                    Eliminar
-                  </button>
+                  <div style={styles.cardActions}>
+                    <button
+                      style={styles.editBtn}
+                      onClick={() => handleOpenEdit(img)}
+                    >
+                      Editar
+                    </button>
+                    <button
+                      style={styles.deleteBtn}
+                      onClick={() => handleDelete(img.idImagen)}
+                    >
+                      Eliminar
+                    </button>
+                  </div>
                 </div>
               </div>
             ))
@@ -174,9 +190,9 @@ export default function ImagenAdmin() {
             style={styles.modalContent}
             onClick={(e) => e.stopPropagation()}
           >
-            <h3 style={styles.modalTitle}>Nueva Imagen</h3>
+            <h3 style={styles.modalTitle}>{editId ? '📝 Editar Imagen' : '✨ Nueva Imagen'}</h3>
             <p style={styles.modalSubtitle}>
-              {tipoEntidad} · ID {idEntidad}
+              {tipoEntidad} · ID {idEntidad} {editId && `(Imagen ID: ${editId})`}
             </p>
 
             <form onSubmit={handleSubmit}>
@@ -184,7 +200,7 @@ export default function ImagenAdmin() {
                 <label style={styles.label}>URL de la imagen</label>
                 <input
                   type="url"
-                  style={styles.input}
+                  style={styles.inputModal}
                   value={form.url}
                   onChange={(e) => setForm({ ...form, url: e.target.value })}
                   placeholder="https://tuservidor.com/imagen.jpg"
@@ -192,21 +208,27 @@ export default function ImagenAdmin() {
                 />
               </div>
 
+              {/* Vista previa en tiempo real */}
+              {form.url && (
+                <div style={styles.previewContainer}>
+                  <p style={styles.label}>Vista previa:</p>
+                  <img src={form.url} alt="Preview" style={styles.previewImg} />
+                </div>
+              )}
+
               <div style={styles.formGroup}>
-                <label style={styles.label}>Descripción (opcional)</label>
+                <label style={styles.label}>Descripción</label>
                 <textarea
                   style={styles.textarea}
                   value={form.descripcion}
-                  onChange={(e) =>
-                    setForm({ ...form, descripcion: e.target.value })
-                  }
+                  onChange={(e) => setForm({ ...form, descripcion: e.target.value })}
                   rows="3"
                 />
               </div>
 
               <div style={styles.modalActions}>
                 <button type="submit" style={styles.saveBtn}>
-                  Guardar
+                  {editId ? 'Actualizar' : 'Guardar'}
                 </button>
                 <button
                   type="button"
@@ -227,8 +249,7 @@ export default function ImagenAdmin() {
 const styles = {
   pageContainer: {
     padding: '2.5rem',
-    background:
-      'radial-gradient(circle at top left, #e0f2fe 0, #f8fafc 45%, #e0f2fe 100%)',
+    background: 'radial-gradient(circle at top left, #e0f2fe 0, #f8fafc 45%, #e0f2fe 100%)',
     minHeight: '100vh',
     fontFamily: "'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
   },
@@ -236,25 +257,12 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: '1.5rem',
+    marginBottom: '2rem',
     gap: '1rem',
   },
-  titleGroup: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '0.4rem',
-  },
-  mainTitle: {
-    margin: 0,
-    color: '#0f172a',
-    fontSize: '1.9rem',
-    fontWeight: '800',
-  },
-  subtitle: {
-    margin: 0,
-    color: '#64748b',
-    fontSize: '0.95rem',
-  },
+  titleGroup: { display: 'flex', flexDirection: 'column', gap: '0.4rem' },
+  mainTitle: { margin: 0, color: '#0f172a', fontSize: '1.9rem', fontWeight: '800' },
+  subtitle: { margin: 0, color: '#64748b', fontSize: '0.95rem' },
   createBtn: {
     display: 'flex',
     alignItems: 'center',
@@ -268,193 +276,145 @@ const styles = {
     cursor: 'pointer',
     boxShadow: '0 10px 25px rgba(37, 99, 235, 0.3)',
   },
-  filtersRow: {
-    display: 'flex',
-    gap: '1rem',
-    marginBottom: '1.5rem',
-    flexWrap: 'wrap',
-  },
-  filterGroup: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '0.25rem',
-  },
-  label: {
-    fontSize: '0.85rem',
-    color: '#475569',
-    fontWeight: '600',
-  },
+  filtersRow: { display: 'flex', gap: '1.5rem', marginBottom: '2rem', flexWrap: 'wrap' },
+  filterGroup: { display: 'flex', flexDirection: 'column', gap: '0.4rem' },
+  label: { fontSize: '0.85rem', color: '#475569', fontWeight: '600', marginBottom: '4px' },
   select: {
-    padding: '0.7rem 0.9rem',
-    borderRadius: '999px',
+    padding: '0.7rem 1rem',
+    borderRadius: '12px',
     border: '1px solid #bfdbfe',
-    backgroundColor: '#eff6ff',
+    backgroundColor: '#fff',
     color: '#1e3a8a',
     minWidth: '200px',
   },
   input: {
-    padding: '0.7rem 0.9rem',
-    borderRadius: '999px',
+    padding: '0.7rem 1rem',
+    borderRadius: '12px',
     border: '1px solid #d1d5db',
+    backgroundColor: '#fff',
     minWidth: '160px',
   },
-  loading: {
-    textAlign: 'center',
-    padding: '3rem',
-    color: '#64748b',
-  },
-  emptyState: {
-    padding: '2rem',
-    textAlign: 'center',
-    color: '#94a3b8',
+  inputModal: {
+    width: '100%',
+    padding: '0.75rem 1rem',
+    borderRadius: '10px',
+    border: '1px solid #d1d5db',
     fontSize: '0.95rem',
-    backgroundColor: 'rgba(255,255,255,0.8)',
-    borderRadius: '16px',
+    boxSizing: 'border-box'
   },
   grid: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-    gap: '1.25rem',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+    gap: '1.5rem',
   },
   card: {
     backgroundColor: '#ffffff',
-    borderRadius: '18px',
+    borderRadius: '20px',
     overflow: 'hidden',
-    boxShadow:
-      '0 18px 35px -15px rgba(15,23,42,0.35)',
+    boxShadow: '0 10px 20px rgba(0,0,0,0.05)',
     display: 'flex',
     flexDirection: 'column',
+    border: '1px solid #f1f5f9'
   },
-  imgWrapper: {
-    position: 'relative',
-    paddingTop: '60%',
-    overflow: 'hidden',
-    backgroundColor: '#e5e7eb',
-  },
-  image: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-  },
-  cardBody: {
-    padding: '0.9rem 1rem 1rem',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '0.5rem',
-  },
-  cardMeta: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    gap: '0.5rem',
-  },
+  imgWrapper: { position: 'relative', paddingTop: '65%', overflow: 'hidden' },
+  image: { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' },
+  cardBody: { padding: '1.2rem', display: 'flex', flexDirection: 'column', gap: '0.8rem' },
+  cardMeta: { display: 'flex', justifyContent: 'space-between', alignItems: 'center' },
   tag: {
     fontSize: '0.7rem',
     textTransform: 'uppercase',
-    letterSpacing: '0.08em',
     backgroundColor: '#e0f2fe',
     color: '#0369a1',
-    padding: '0.2rem 0.6rem',
-    borderRadius: '999px',
+    padding: '0.3rem 0.7rem',
+    borderRadius: '8px',
     fontWeight: '700',
   },
-  idTag: {
-    fontSize: '0.75rem',
-    color: '#64748b',
-  },
-  descText: {
-    fontSize: '0.85rem',
-    color: '#4b5563',
-    minHeight: '2.2em',
-  },
-  muted: {
-    color: '#9ca3af',
-    fontStyle: 'italic',
+  idTag: { fontSize: '0.75rem', color: '#94a3b8', fontWeight: '500' },
+  descText: { fontSize: '0.85rem', color: '#475569', minHeight: '2.5em', margin: 0 },
+  cardActions: { display: 'flex', gap: '0.6rem', marginTop: '0.5rem' },
+  editBtn: {
+    flex: 1,
+    padding: '0.5rem',
+    backgroundColor: '#f0fdf4',
+    color: '#166534',
+    borderRadius: '8px',
+    border: '1px solid #dcfce7',
+    fontSize: '0.8rem',
+    fontWeight: '600',
+    cursor: 'pointer',
   },
   deleteBtn: {
-    marginTop: '0.25rem',
-    alignSelf: 'flex-end',
-    padding: '0.4rem 0.9rem',
-    backgroundColor: '#fee2e2',
-    color: '#b91c1c',
-    borderRadius: '999px',
-    border: 'none',
+    flex: 1,
+    padding: '0.5rem',
+    backgroundColor: '#fef2f2',
+    color: '#991b1b',
+    borderRadius: '8px',
+    border: '1px solid #fee2e2',
     fontSize: '0.8rem',
     fontWeight: '600',
     cursor: 'pointer',
   },
   modalOverlay: {
     position: 'fixed',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: 'rgba(15,23,42,0.45)',
+    inset: 0,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    backdropFilter: 'blur(4px)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    zIndex: 1200,
+    zIndex: 2000,
   },
   modalContent: {
-    backgroundColor: '#ffffff',
-    borderRadius: '18px',
+    backgroundColor: '#fff',
+    borderRadius: '24px',
     padding: '2rem',
-    width: '95%',
-    maxWidth: '520px',
-    maxHeight: '90vh',
-    overflow: 'auto',
-    boxShadow:
-      '0 24px 48px rgba(15,23,42,0.45)',
+    width: '90%',
+    maxWidth: '500px',
+    boxShadow: '0 25px 50px -12px rgba(0,0,0,0.25)',
   },
-  modalTitle: {
-    margin: 0,
-    fontSize: '1.5rem',
-    fontWeight: '800',
-    color: '#0f172a',
-  },
-  modalSubtitle: {
-    margin: '0.2rem 0 1.5rem 0',
-    fontSize: '0.9rem',
-    color: '#64748b',
-  },
-  formGroup: {
-    marginBottom: '1.5rem',
-  },
+  modalTitle: { margin: 0, fontSize: '1.4rem', fontWeight: '800', color: '#1e293b' },
+  modalSubtitle: { margin: '0.5rem 0 1.5rem', fontSize: '0.9rem', color: '#64748b' },
+  previewContainer: { marginBottom: '1.5rem', textAlign: 'center' },
+  previewImg: { width: '100%', height: '180px', objectFit: 'cover', borderRadius: '12px', border: '1px solid #e2e8f0' },
   textarea: {
     width: '100%',
     padding: '0.75rem',
     borderRadius: '10px',
     border: '1px solid #d1d5db',
     fontSize: '0.95rem',
-    resize: 'vertical',
-    fontFamily: 'inherit',
+    resize: 'none',
+    boxSizing: 'border-box'
   },
-  modalActions: {
-    display: 'flex',
-    justifyContent: 'flex-end',
-    gap: '0.75rem',
-  },
+  modalActions: { display: 'flex', gap: '1rem', marginTop: '1rem' },
   saveBtn: {
-    padding: '0.75rem 1.6rem',
-    background: 'linear-gradient(135deg, #0ea5e9, #2563eb)',
+    flex: 2,
+    padding: '0.8rem',
+    background: '#2563eb',
     color: '#fff',
-    borderRadius: '999px',
+    borderRadius: '12px',
     border: 'none',
     fontWeight: '600',
     cursor: 'pointer',
   },
   cancelBtn: {
-    padding: '0.75rem 1.6rem',
-    backgroundColor: '#e5e7eb',
-    color: '#374151',
-    borderRadius: '999px',
+    flex: 1,
+    padding: '0.8rem',
+    backgroundColor: '#f1f5f9',
+    color: '#475569',
+    borderRadius: '12px',
     border: 'none',
     fontWeight: '600',
     cursor: 'pointer',
   },
+  loading: { textAlign: 'center', padding: '3rem', color: '#64748b', fontWeight: '600' },
+  emptyState: {
+    gridColumn: '1 / -1',
+    padding: '4rem 2rem',
+    textAlign: 'center',
+    color: '#94a3b8',
+    backgroundColor: '#fff',
+    borderRadius: '20px',
+    border: '2px dashed #e2e8f0'
+  },
+  muted: { color: '#cbd5e1', fontStyle: 'italic' }
 };
-
-
